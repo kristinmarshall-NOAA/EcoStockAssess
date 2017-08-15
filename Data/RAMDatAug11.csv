@@ -1,0 +1,210 @@
+Stock,source,Year,Rev2013,Council,Lab,Record,Habitat,Bycatch,Diet,Predator,Climate,TechInt,Competition,OF2001,OF0105,OF10-14,OF2014,Sptype,DietLab
+Longfin inshore squid Atlantic Coast,RAM,2010,26549977,MAFMC,NEFSC,KM,2.5,0,1,2,1,0,0,0,Not Overfished,Not Overfished,0,pelagic,Diet Lab
+Northern Shortfin Squid Eastern Shelf,RAM,2006,1131530,MAFMC,NEFSC,KM,0,0,0,0,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,Diet Lab
+scup,RAM,2009,9669109,MAFMC,NEFSC,KM,0,0,0,0,0,0,0,1,Overfished,Not Overfished,0,forage,Diet Lab
+Atlantic herring,web,2012,31850145,NEFMC,NEFSC,KM,1,0,0,3,3,0,0,0,Not Overfished,Not Overfished,0,forage,Diet Lab
+Butterfish,RAM,2014,1661267,NEFMC,NEFSC,KM,3,0,1,3,0,3,0,0,Overfished,Overfished,0,forage,Diet Lab
+Atka mackerel (BSAI),web,2014,15279265,NPFMC,AFSC,LK,2.5,1,2,2,1,3,1,0,Not Overfished,Not Overfished,0,forage,Diet Lab
+shortbelly rockfish pacific coast,web,2007,1154,PFMC,NW-SW,KM,1,0,1,3,1,3,0,0,Not Overfished,Not Overfished,0,forage,No Diet Lab
+Pacific Sardine,web,2014,14819775,PFMC,SWFSC,KM,1,0,0,0,3,3,0,0,Not Overfished,Not Overfished,0,forage,No Diet Lab
+Gag Gulf of Mexico,WEB,2014,2830502,GMFMC,SEFSC,KM,0,0,1,2,3,3,0,0,Not Overfished,Overfished,0,groundfish,No Diet Lab
+Gray Triggerfish - Gulf of Mexico,web,2006,78245,GMFMC,SEFSC,KM,1,0,0,0,0,3,0,0,Not Overfished,Overfished,1,groundfish,No Diet Lab
+Red Grouper - Gulf of Mexico,web,2006,16221341,GMFMC,SEFSC,KM,3,0,0,1,1,3,0,1,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Red snapper Gulf of Mexico,RAM,2013,20492987,GMFMC,SEFSC,KM,1,0,1,1,2,3,1,1,Overfished,Overfished,1,groundfish,No Diet Lab
+Tilefish Gulf of Mexico,RAM,2011,54701062,GMFMC,SEFSC,KM,2.5,0,0,0,1,2,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Vermilion Snapper - Gulf of Mexico,web,2006,4001792,GMFMC,SEFSC,KM,3,0,0,1,0,3,0,0,Overfished,Not Overfished,0,groundfish,No Diet Lab
+Yellowedge grouper Gulf of Mexico,RAM,2011,3030992,GMFMC,SEFSC,KM,2.5,0,0,0,0,2,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+bluefish - atlantic coast,web,2005,2253518,MAFMC,NEFSC,KM,1,0,0,0,0,0,0,1,Overfished,Not Overfished,0,groundfish,Diet Lab
+Golden Tilefish Mid-Atlantic Coast,RAM,2014,5873341,MAFMC,NEFSC,KM,2,0,0,0,2,2,1,1,Overfished,Not Overfished,0,groundfish,Diet Lab
+Summer Flounder,web,2013,27444274,MAFMC,NEFSC,KM,1,0,1,1,2,3,0,0,Overfished,Not Overfished,0,groundfish,Diet Lab
+Monkfish Gulf of Maine / Northern Georges Bank,RAM,2010,13586447,NE-Mid,NEFSC,KM,1,0,2,0,2,3,1,1,Overfished,Not Overfished,0,groundfish,Diet Lab
+Monkfish Southern Georges Bank / Mid-Atlantic,RAM,2010,5137183,NE-Mid,NEFSC,KM,1,0,2,0,2,3,1,1,Overfished,Not Overfished,0,groundfish,Diet Lab
+Spiny dogfish - Atlantic Coast,web,2006,2117991,NE-Mid,NEFSC,KM,1,0,1,0,2,3,0,1,Overfished,Not Overfished,0,groundfish,Diet Lab
+Acadian Redfish Gulf of Maine/Georges Bank 2008,RAM,2008,4337163,NEFMC,NEFSC,LK,0,0,0,0,0,0,0,1,Overfished,Not Overfished,0,groundfish,Diet Lab
+American Plaice - Gulf of Maine / George's Bank,web,2008,4688995,NEFMC,NEFSC,KM,0,0,0,0,0,3,0,0,Overfished,Not Overfished,0,groundfish,Diet Lab
+Atlantic cod Eastern Georges Bank,web,2013,10391037,NEFMC,NEFSC,KM,0,0,0,0,0,3,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Atlantic cod Georges Bank,RAM,2013,10391037,NEFMC,NEFSC,KM,1,0,0,0,0,0,0,0,Overfished,Overfished,1,groundfish,Diet Lab
+Atlantic cod Gulf of Maine,RAM,2013,10391037,NEFMC,NEFSC,KM,0,0,0,0,0,0,0,0,Not Overfished,Overfished,1,groundfish,Diet Lab
+Atlantic Halibut - Northwestern Atlantic,web,2008,505826,NEFMC,NEFSC,KM,0,0,0,0,0,3,0,1,Overfished,Overfished,1,groundfish,Diet Lab
+atlantic wolffish,RAM,2009,NA,NEFMC,NEFSC,KM,1,0,1,0,0,0,0,0,Not Overfished,Overfished,1,groundfish,Diet Lab
+black sea bass,RAM,2009,6602229,NEFMC,NEFSC,KM,0,0,0,0,3,0,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Haddock George's Bank,web,2008,6002480,NEFMC,NEFSC,KM,0,0,0,0,0,3,0,0,Overfished,Not Overfished,0,groundfish,Diet Lab
+Haddock Gulf of Maine,web,2014,6002480,NEFMC,NEFSC,KM,1,0,0,0,2,3,0,0,Overfished,Not Overfished,0,groundfish,Diet Lab
+Northeast skate species complex,RAM,2007,7339305,NEFMC,NEFSC,KM,0,0,2,0,0,1,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Pollock - Gulf of Maine / George's Bank,web,2010,11395943,NEFMC,NEFSC,KM,0,1,2,0,3,3,0,0,Overfished,Overfished,0,groundfish,Diet Lab
+Silver Hake,RAM,2006,8699831,NEFMC,NEFSC,KM,0,0,1,1,3,0,0,1,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Skate species,RAM,2009,7339305,NEFMC,NEFSC,KM,0,0,0,0,0,1,0,1,Overfished,Overfished,1,groundfish,Diet Lab
+White hake - Gulf of Maine / Georges Bank,web,2013,6484444,NEFMC,NEFSC,KM,1,0,0,0,0,3,0,0,Overfished,Overfished,0,groundfish,Diet Lab
+Winter flounder - George's Bank,web,2011,9626908,NEFMC,NEFSC,KM,1,0,0,2,3,3,0,0,Not Overfished,Overfished,0,groundfish,Diet Lab
+Winter Flounder - Gulf of Maine,web,2008,9626908,NEFMC,NEFSC,KM,0,0,0,0,0,3,0,0,Not Overfished,Overfished,0,groundfish,Diet Lab
+Winter flounder - Southern New England / Mid-Atlantic,web,2011,273016,NEFMC,NEFSC,KM,1,0,0,2,3,3,0,0,Overfished,Overfished,1,groundfish,Diet Lab
+Witch Flounder,web,2008,3735330,NEFMC,NEFSC,KM,0,0,0,0,0,3,0,0,Not Overfished,Overfished,1,groundfish,Diet Lab
+Yellowtail flounder - Cape Cod / Gulf of Maine,web,2008,3956805,NEFMC,NEFSC,KM,0,0,0,0,0,3,0,0,Overfished,Overfished,1,groundfish,Diet Lab
+Yellowtail flounder - Georges Bank,web,2014,3956805,NEFMC,NEFSC,KM,1,0,0,0,0,3,0,0,Not Overfished,Overfished,1,groundfish,Diet Lab
+Yellowtail flounder- Southern New England / Mid-Atlantic,web,2012,243122,NEFMC,NEFSC,KM,1,0,0,1,3,3,0,0,Overfished,Overfished,0,groundfish,Diet Lab
+Alaska Plaice,web,2014,8315893,NPFMC,AFSC,KM,0,1,2,1,3,3,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Arrowtooth flounder BSAI,web,2014,9147441,NPFMC,AFSC,LK,1,2,2,2,3,3,1,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Arrowtooth Flounder GOA ,web,2013,9147441,NPFMC,AFSC,KM,1,0,2,2,0,3,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Blackspotted AND Rougheye Rockfish - BSAI (2008),RAM,2008,8478399,NPFMC,AFSC,LK,0,0,0,0,0,2,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Deepwater Flatfish GOA,web,2013,30657,NPFMC,AFSC,KM,1,0,0,0,0,3,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Demersal shelf rockfish complex (GOA - includes Yelloweye),web,2014,8478399,NPFMC,AFSC,LK,3,0,1,1,1,3,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Dusky Rockfish GOA,web,2013,8478399,NPFMC,AFSC,KM,1,2,1,1,1,3,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Flathead sole (BSAI),web,2014,7565629,NPFMC,AFSC,LK,1,2,2,2,3,0,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Flathead sole (GOA),RAM,2009,7565629,NPFMC,AFSC,LK,1,0,2,2,0,1,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Greenland Turbot (or halibut) - BSAI,web,2014,1520419,NPFMC,AFSC,LK,1,0,0,1,1,3,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Kamchatka flounder (BSAI),web,2014,8315893,NPFMC,AFSC,LK,1,1,1.5,1,3,1,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Northern rock sole Eastern Bering Sea and Aleutian Islands,RAM,2012,32735842,NPFMC,AFSC,KM,3,2,2,1,1,2,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Northern rockfish (BSAI),web,2014,8478399,NPFMC,AFSC,LK,1,0,2,1,0,3,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Northern rockfish (GOA),web,2014,8478399,NPFMC,AFSC,LK,1,2,1,1,1,0,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Northern/Southern rock sole (GOA),web,2014,32735842,NPFMC,AFSC,LK,1,0,0,0,1,0,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Other rockfish (BSAI),web,2014,8478399,NPFMC,AFSC,LK,1,0,0.5,0.5,0,3,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Other rockfish (GOA),web,2011,8478399,NPFMC,AFSC,LK,1,1,1,1,1,0,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Other skate complex (GOA),web,2014,6341673,NPFMC,AFSC,LK,1,0,1,1,0,3,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Pacific cod Bering Sea and Aleutian Islands,RAM,2012,156129080,NPFMC,AFSC,KM,2,2,1,1,2,0,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Pacific cod Gulf of Alaska,RAM,2013,156129080,NPFMC,AFSC,KM,1,2,2,2,2,0,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Pacific Ocean Perch (BSAI),web,2014,26163364,NPFMC,AFSC,LK,1,2,2,1,0,0,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Pacific Ocean Perch (GOA),web,2014,26163364,NPFMC,AFSC,LK,1,2,1,1,1,3,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Rex sole (GOA),web,2011,2815691,NPFMC,AFSC,LK,1,2,2,1.5,1,0,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Rougheye and Blackspotted Rockfish BSAI,web,2014,8478399,NPFMC,AFSC,KM,0,0,0,0,0,3,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Sablefish Alaska,web,2014,82111039,NPFMC,AFSC,KM,1,2,1,1,2,3,1,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Sculpin stock complex (BSAI),web,2014,4958,NPFMC,AFSC,LK,1,0,2,2,1,3,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Sculpin stock complex (GOA),web,2011,4958,NPFMC,AFSC,LK,1,0,2,2,0,0,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Shallow-water flatfish,web,2009,8315893,NPFMC,AFSC,LK,0,1,1,0,0,0,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Shortraker rockfish (BSAI),web,2014,8478399,NPFMC,AFSC,LK,1,0,1,0,0,3,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Shortraker rockfish (GOA),web,2011,8478399,NPFMC,AFSC,LK,1,2,1,1,1,0,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Skate complex (BSAI),web,2014,6341673,NPFMC,AFSC,LK,1,0,2,2,2,3,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Thornyheads (GOA),web,2011,,NPFMC,AFSC,LK,1,1,2,2,0,3,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Walleye pollock Aleutian Islands,RAM,2012,406435240,NPFMC,AFSC,KM,1,2,2,2,0,0,1,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Walleye pollock Bogoslof,web,2014,406435240,NPFMC,AFSC,LK,1,1,0,1,0,3,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Walleye pollock Eastern Bering Sea,web,2014,406435240,NPFMC,AFSC,LK,1,2,1,2,2,3,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Walleye pollock GOA,web,2014,406435240,NPFMC,AFSC,LK,0,2,2,2.5,1,2,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Yellowfin sole BSAI,web,2014,60886691,NPFMC,AFSC,KM,1,2,2,1,3,3,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Yellowfin sole BSAI,web,2014,60886691,NPFMC,AFSC,KM,1,2,2,1,3,3,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Dusky Rockfish GOA,web,2013,8478399,NPFMC,AFSC,KM,1,2,1,1,1,3,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Blackspotted and Rougheye Rockfish (GOA),web,2014,8478399,NPFMC ,AFSC,LK,1,2,1,1,1,3,0,0,Not Overfished,Not Overfished,0,groundfish,Diet Lab
+Arrowtooth flounder - Pacific Coast,web,2007,487093,PFMC,NW-SW,KM,1,0,2,1,0,3,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Aurora Rockfish,web,2013,5636,PFMC,NW-SW,KM,1,0,1,1,1,3,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Black rockfish - Northern Pacific Coast,web,2007,521283,PFMC,NW-SW,KM,1,0,0,0,1,3,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Black rockfish - Southern Pacific Coast,web,2007,157747,PFMC,NW-SW,KM,3,0,1,1,0,3,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Blackgill rockfish Pacific Coast,RAM,2011,144129,PFMC,NW-SW,KM,1,0,1,1,1,2,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Blue Rockfish ,RAM,2008,43003,PFMC,NW-SW,LK,1,0,1,1,1,1,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Bocaccio - Southern Pacific Coast,web,2009,39734,PFMC,NW-SW,KM,2,0,1,1,2,3,0,1,Overfished,Not Overfished,0,groundfish,No Diet Lab
+Cabezon California and Oregon Coast,RAM,2009,512962,PFMC,NW-SW,KM,1,0,0,0,1,0,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+California scorpionfish - Southern California,web,2005,28118,PFMC,NW-SW,KM,1,0,1,0,0,1,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Canary rockfish - Pacific Coast,web,2007,17388,PFMC,NW-SW,KM,1,0,1,1,1,3,0,1,Overfished,Overfished,1,groundfish,No Diet Lab
+Chilipepper - Southern Pacific Coast,web,2007,471986,PFMC,NW-SW,KM,1,1,1,1,3,1,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Cowcod - Southern California,web,2011,181,PFMC,NW-SW,KM,1,0,2,2,1,3,0,1,Overfished,Overfished,1,groundfish,No Diet Lab
+Darkblotched rockfish Pacific Coast,web,2013,131976,PFMC,NW-SW,KM,1,0,1,1,1,3,0,1,Overfished,Not Overfished,0,groundfish,No Diet Lab
+Dover Sole Pacific Coast,RAM,2011,7738458,PFMC,NW-SW,KM,1,0,1,0,1,0,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+English sole - Pacific Coast,web,2007,242764,PFMC,NW-SW,KM,1,0,0,0,0,1,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Gopher Rockfish Northern California,RAM,2005,392098,PFMC,NW-SW,LK,1,0,0,1,0,0,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Greenspotted rockfish - Pacific Coast,web,2011,8674,PFMC,NW-SW,KM,1,0,0,0,0,1,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+"Greenstriped Rockfish Ca, OR, WA",RAM,2009,111,PFMC,NW-SW,KM,1,0,1,1,0,3,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Kelp greenling - Oregon,web,2005,292241,PFMC,NW-SW,KM,1,0,0,0,0,3,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Lingcod Pacific Coast ,RAM,2009,1239079,PFMC,NW-SW,KM,1,0,1,1,1,3,0,1,Overfished,Not Overfished,0,groundfish,No Diet Lab
+Longnose skate - Pacific Coast,web,2007,904387,PFMC,NW-SW,KM,1,0,0,0,0,3,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+"Longspine thornyhead (California, Oregon, and Washington)",web,2011,0,PFMC,NW-SW,KM,1,1,1,1,0,0,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Pacific Sanddab,web,2013,164563,PFMC,NW-SW,KM,1,1,1,1,1,0,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Petrale sole Pacific Coast,web,2013,6179659,PFMC,NW-SW,KM,1,1,1,1,1,0,0,0,Not Overfished,Overfished,0,groundfish,No Diet Lab
+Rougheye and Blackspotted Rockfish,web,2013,1535174,PFMC,NW-SW,KM,1,0,1,1,1,3,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Sablefish Pacific Coast,RAM,2011,19572546,PFMC,NW-SW,KM,1,0,1,1,3,3,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+"Shortspine Thornyhead - Washington, Oregon, California 2013",web,2013,3171584,PFMC,NW-SW,KM,1,0,1,1,0,0,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Spiny dogfish Pacific Coast,web,2011,80258,PFMC,NW-SW,KM,1,0,1,1,1,3,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Splitnose Rockfish,RAM,2009,20371,PFMC,NW-SW,KM,1,0,1,1,1,3,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+"Starry Flounder off CA., OR., and WA.",RAM,2005,12517,PFMC,NW-SW,LK,2.5,0,1,0,0,0,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Vermilion Rockfish Pacific Coast,web,2005,157649,PFMC,NW-SW,KM,1,0,0,0,0,0,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Whiting Pacific Coast,web,2014,61321406,PFMC,NW-SW,KM,1,2,1,1,1,1,0,0,Overfished,Not Overfished,0,groundfish,No Diet Lab
+Widow rockfish Pacific Coast,RAM,2011,459034,PFMC,NW-SW,KM,1,0,1,0,0,3,0,1,Overfished,Not Overfished,0,groundfish,No Diet Lab
+Yelloweye rockfish Pacific Coast,RAM,2011,1575,PFMC,NW-SW,KM,1,0,1,1,1,1,0,0,Overfished,Overfished,1,groundfish,No Diet Lab
+Yellowtail rockfish Pacific Coast Northern stock (2005),RAM,2005,1323495,PFMC,NW-SW,LK,0,0,0,0,0,3,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Black Grouper Gulf of Mexico and South Atlantic,RAM,2010,459634,SA-GM,SEFSC,KM,3,0,0,0,1,0,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Mutton Snapper - South Atlantic and Gulf of Mexico,web,2008,472151,SA-GM,SEFSC,KM,3,0,0,0,3,0,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Goliath Grouper,WEB,2011,0,SA-GM,SEFSC,KM,3,0,0,0,1,1,0,1,Overfished,Not Overfished,0,groundfish,No Diet Lab
+Hogfish Gulf of Mexico and South Atlantic,WEB,2013,221768,SA-GM,SEFSC,KM,3,0,1,0,1,0,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Yellowtail Snapper - Gulf of Mexico,RAM,2012,5541535,SA-GM,SEFSC,KM,3,0,0,1,1,1,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Yellowtail Snapper Southern Atlantic Coast ,RAM,2012,292174,SA-GM,SEFSC,KM,3,0,0,1,1,1,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Black Sea Bass - South Atlantic,web,2011,1407192,SAFMC,SEFSC,KM,3,0,0,0,1,3,0,1,Overfished,Overfished,0,groundfish,No Diet Lab
+Blueline Tilefish South Atlantic,WEB,2013,624716,SAFMC,SEFSC,KM,2,0,1,0,2,1,0,0,Not Overfished,Not Overfished,1,groundfish,No Diet Lab
+Gag - South Atlantic,web,2006,1882561,SAFMC,SEFSC,KM,2,0,0,0,1,0,0,1,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Greater Amberjack - South Atlantic,web,2008,613151,SAFMC,SEFSC,KM,1,0,0,0,0,3,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Hogfish - Southeast Florida,web,2013,221768,SAFMC,SEFSC,KM,3,0,1,0,1,0,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Red grouper South Atlantic,RAM,2010,356662,SAFMC,SEFSC,KM,3,0,0,0,3,0,0,1,Overfished,Overfished,0,groundfish,No Diet Lab
+Red Porgy,RAM,2006,296981,SAFMC,SEFSC,LK,0,0,0,0,0,0,0,1,Overfished,Overfished,1,groundfish,No Diet Lab
+Red Snapper - South Atlantic,web,2010,127613,SAFMC,SEFSC,KM,1,0,0,1,1,3,0,1,Overfished,Overfished,1,groundfish,No Diet Lab
+Snowy Grouper - South Atlantic,web,2013,245837,SAFMC,SEFSC,KM,1,0,0,0,0,3,0,1,Overfished,Overfished,1,groundfish,No Diet Lab
+Tilefish - South Atlantic,web,2011,1668022,SAFMC,SEFSC,KM,3,0,0,0,0,0,0,1,Overfished,Not Overfished,0,groundfish,No Diet Lab
+Vermilion Snapper - South Atlantic,web,2008,2995245,SAFMC,SEFSC,KM,0,0,0,0,3,3,0,1,Overfished,Not Overfished,0,groundfish,No Diet Lab
+wreckfish - South Atlantic,web,2014,64612,SAFMC,SEFSC,KM,0,0,0,0,0,0,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Yellowtail snapper,RAM,2003,292174,SAFMC,SEFSC,LK,1,0,1,1,1,1,0,0,Not Overfished,Not Overfished,0,groundfish,No Diet Lab
+Brown shrimp Gulf of Mexico,web,2012,245720719,GMFMC,SEFSC,KM,0,0,0,0,0,0,0,0,Not Overfished,Not Overfished,0,Invert,No Diet Lab
+Pink shrimp Gulf of Mexico,RAM,2012,14678259,GMFMC,SEFSC,KM,0,0,0,0,0,0,0,0,Not Overfished,Not Overfished,0,Invert,No Diet Lab
+White shrimp Gulf of Mexico,RAM,2012,230775707,GMFMC,SEFSC,KM,0,0,0,0,0,0,0,0,Not Overfished,Not Overfished,0,Invert,No Diet Lab
+Atlantic surfclam - Mid-Atlantic Coast,web,2013,31722542,MAFMC,NEFSC,KM,3,0,0,0,2,0,0,0,Not Overfished,Not Overfished,0,Invert,Diet Lab
+Ocean quahog,web,2009,23651355,MAFMC,NEFSC,KM,3,1,0,0,0,2,0,0,Not Overfished,Not Overfished,0,Invert,Diet Lab
+deep sea red crab,RAM,2009,5,NEFMC,NEFSC,KM,0,0,0,0,0,0,0,0,Not Overfished,Not Overfished,0,Invert,Diet Lab
+Sea Scallop Georges Bank / Mid-Atlantic Bight,web,2014,466920237,NEFMC,NEFSC,KM,3,0,2,2,2,0,0,0,Not Overfished,Not Overfished,0,Invert,Diet Lab
+Blue King Crab Saint Matthew,RAM,2013,82869602,NPFMC,ADFG,KM,1,0,0,0,0,3,0,1,Overfished,Overfished,1,Invert,No Diet Lab
+Red King Crab Bristol Bay,RAM,2013,82869602,NPFMC,ADFG,KM,1,0,0,2,2.5,3,0,0,Not Overfished,Not Overfished,0,Invert,No Diet Lab
+Red King Crab Norton Sound,RAM,2013,82869602,NPFMC,ADFG,KM,1,0,0,0,0,2,0,0,Not Overfished,Not Overfished,0,Invert,No Diet Lab
+Blue King Crab Pribilof Islands,RAM,2013,82869602,NPFMC,AFSC,KM,1,0,0,1,2.5,3,1,0,Overfished,Overfished,0,Invert,Diet Lab
+Red King Crab Pribilof Islands,RAM,2013,82869602,NPFMC,AFSC,KM,0,0,0,0,2.5,3,0,0,Not Overfished,Not Overfished,0,Invert,Diet Lab
+Snow crab Bering Sea,RAM,2013,132369655,NPFMC,AFSC,KM,0,1,0,1,2,3,1,0,Overfished,Not Overfished,0,Invert,Diet Lab
+Tanner Crab Bering Sea,RAM,2013,8106713,NPFMC,AFSC,KM,0,0,0,2,2.5,3,1,1,Overfished,Overfished,0,Invert,Diet Lab
+Spiny lobster - Southeast US,web,2005,50185930,SA-GM,SEFSC,KM,3,1,1,0,1,0,0,0,Not Overfished,Not Overfished,0,Invert,No Diet Lab
+Cobia Gulf of Mexico,WEB,2012,312972,GMFMC,SEFSC,KM,0,0,0,0,1,3,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Greater Amberjack Gulf of Mexico,WEB,2014,1048361,GMFMC,SEFSC,KM,1,0,0,0,0,0,0,1,Overfished,Overfished,1,pelagic,No Diet Lab
+King Mackerel Gulf of Mexico,WEB,2014,1956045,GMFMC,SEFSC,KM,1,0,1,0,2,3,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Spanish mackerel Gulf of Mexico,RAM,2013,1352430,GMFMC,SEFSC,KM,0,0,0,0,0,3,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Atlantic Mackerel ,RAM,2006,1923049,MAFMC,NEFSC,KM,0,0,0,2,2,0,0,0,Not Overfished,Not Overfished,0,pelagic,Diet Lab
+Chinook salmon - California Central Valley: Sacramento River Fall,web,2014,22956869,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Overfished,0,pelagic,No Diet Lab
+Chinook salmon - California Central Valley: Sacramento River Winter,web,2014,22956869,PFMC,NW-SW,KM,1,1,0,1,0,1,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Columbia River Basin: Lower River Hatchery Fall,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Columbia River Basin: Lower River Hatchery Spring,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Columbia River Basin: Mid-River Bright Hatchery Fall,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Columbia River Basin: North Lewis River Fall,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Columbia River Basin: Snake River Fall,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Columbia River Basin: Snake River Spring/Summer,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Columbia River Basin: Spring Creek Hatchery Fall,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Columbia River Basin: Upper River Bright Fall,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Columbia River Basin: Upper River Spring,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Columbia River Basin: Upper River Summer,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Columbia River Basin: Upper Willamette Spring,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Northern California Coast: Klamath River Fall,web,2014,22956869,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Oregon Coast: Central and Northern Oregon,web,2014,11903199,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Oregon Coast: Southern Oregon,web,2014,11903199,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Puget Sound: Cedar River Summer/Fall,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Puget Sound: Eastern Strait of Juan de Fuca Summer/Fall,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Puget Sound: Green River Summer/Fall,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Puget Sound: Nooksack Spring Early,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Puget Sound: Puyallup Summer/Fall,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Puget Sound: Skagit Spring,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Puget Sound: Skagit Summer/Fall,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Puget Sound: Snohomish Summer/Fall,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,3,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Puget Sound: Stillaguamish Summer/Fall,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,3,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Puget Sound: White River Spring,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Washington Coast: Hoko Summer/Fall,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Washington Coast: Queets Fall,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Washington Coast: Quinault Fall Hatchery,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Washington Coast: Willapa Bay Fall Hatchery,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Chinook salmon - Washington Coast: Willapa Bay Fall Natural,web,2014,16717952,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Coho salmon - Oregon Production Index Area: Columbia River Early Hatchery,web,2014,503191,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Coho salmon - Oregon Production Index Area: Columbia River Late Hatchery,web,2014,503191,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Coho salmon - Oregon Production Index Area: Lower Columbia Natural,web,2014,503191,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Coho salmon - Oregon Production Index Area: Oregon Coast Natural,web,2014,503191,PFMC,NW-SW,KM,1,1,0,1,3,2,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Coho salmon - Puget Sound: Hood Canal,web,2014,6047229,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Coho salmon - Puget Sound: Skagit,web,2014,6047229,PFMC,NW-SW,KM,1,1,0,1,3,2,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Coho salmon - Puget Sound: Snohomish,web,2014,6047229,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Coho salmon - Puget Sound: South Puget Sound Hatchery,web,2014,6047229,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Coho salmon - Puget Sound: Stillaguamish,web,2014,6047229,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Coho salmon - Washington Coast: Grays Harbor,web,2014,6047229,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Coho salmon - Washington Coast: Hoh,web,2014,6047229,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Coho salmon - Washington Coast: Queets,web,2014,6047229,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Coho salmon - Washington Coast: Quillayute Fall,web,2014,6047229,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Coho salmon - Washington Coast: Quillayute Summer Hatchery,web,2014,6047229,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Coho salmon - Washington Coast: Strait of Juan de Fuca,web,2014,6047229,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Coho salmon - Washington Coast: Willapa Bay Hatchery,web,2014,6047229,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Coho salmon - Washington Coast: Willapa Bay Natural,web,2014,6047229,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Pacific Chub Mackerel - Pacific Coast,web,2014,1633673,PFMC,SWFSC,KM,1,0,1,1,2,2,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Cobia South Atlantic,WEB,2013,285188,SAFMC,SEFSC,KM,0,0,0,0,1,3,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+King Mackerel South Atlantic,WEB,2014,5213393,SAFMC,SEFSC,KM,1,0,1,0,3,3,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
+Spanish Mackerel South Atlantic,RAM,2008,3696665,SAFMC,SEFSC,KM,0,0,0,0,1,1,0,0,Not Overfished,Not Overfished,0,pelagic,No Diet Lab
