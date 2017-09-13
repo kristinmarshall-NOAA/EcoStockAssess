@@ -3,9 +3,10 @@ require(likert)
 require(ggplot2)
 require(reshape)
 library(ggsidekick)
+library(dplyr)
 
 
-dat=read.csv("data/RAMdatAug11.csv", header=T)
+dat=read.csv("Data/RAMdatSept13.csv", header=T)
 
 dat=dat[is.na(dat$Year)==F,]
 
@@ -31,15 +32,11 @@ dat.long$EcoInt[dat.long$EcoInt==7]="Competition"
 
 levels(dat.long$EcoInt)=c('Habitat','Climate','Bycatch','TechInt','Diet','Predator','Competition')
 
-dat.long.sub=dat.long[dat.long$score>0,]
-  
-ggplot(dat.long.sub, aes(x=factor(EcoInt))) +
-  geom_histogram(stat='count') +
-  scale_fill_brewer() +
-  facet_wrap(~score, ncol=2) +
-  theme_sleek()
+dat.long$EcoInt=factor(dat.long$EcoInt, levels=c("Bycatch Target","Bycatch Other", "Habitat","Climate","Diet","Predation","Competition"))
 
-dat.long.sub=dat.long #[dat.long$score>0,]
+  
+
+dat.long.sub=dat.long
 dat.long.sub$EcoInt=factor(dat.long.sub$EcoInt, levels=c("Bycatch Target","Bycatch Other", "Habitat","Climate","Diet","Predation","Competition"))
 
 dat.all <- cbind(expand.grid(EcoInt=levels(dat.long.sub$EcoInt), score=levels(as.factor(dat.long.sub$score)), n.count=NA, per.count=NA))
@@ -53,6 +50,10 @@ for(i in levels(dat.all$EcoInt)) {
 dat.all$per.count=dat.all$n.count/dim(dat)[1]
 dat.sub=dat.all[dat.all$score>0,]
 dat.sub$Usage=factor(dat.sub$score, labels=c('Background','Qual.','Quant.'))
+
+
+
+##Figure 1, a histogram of frequency of scores by category of ecol. info
 ggplot(dat.sub, aes(x=factor(EcoInt), y=per.count, fill=Usage), cex=2) +
   geom_bar(width=.7, position="dodge", stat="identity") +
   scale_fill_brewer(palette='Greys')+
@@ -65,22 +66,6 @@ ggplot(dat.sub, aes(x=factor(EcoInt), y=per.count, fill=Usage), cex=2) +
 
 ##Diet Lab
 dat.long.sub=dat.long[(dat.long$EcoInt=="Predation" | dat.long$EcoInt=="Diet"),]
-# ggplot(dat.long.sub, aes(x=factor(DietLab), y=score)) +
-#   geom_violin(scale="width", adjust=3) +
-#   theme(text=element_text(size=18)) +
-#   labs(x="", y="Score") +
-#   facet_wrap(~EcoInt, ncol=2) +
-#   theme_sleek()
-
-
-# ggplot(dat.long.sub, aes(x=factor(DietLab), y=score)) +
-#   geom_dotplot(binaxis="y", stackdir="center", binwidth=0.02, stackratio=0.7) +
-#   #geom_freqpoly() +
-#   #theme(text=element_text(size=18)) +
-#   #geom_jitter(height=0.3, width=0.3) +
-#   labs(x="", y="Score") +
-#   facet_wrap(~EcoInt, ncol=2) +
-#   theme_sleek()
 
 dat.long.sub$Usage=factor(dat.long.sub$score, labels=c('None','Background','Qual.','Quant.'))
 ggplot(dat.long.sub, aes(DietLab, fill=Usage)) +
@@ -103,13 +88,6 @@ ggplot(dat.long.sub, aes(OF0105, fill=Usage)) +
 
 
 
-
-# ggplot(dat.long.sub, aes(y=score, x=factor(OF0105))) +
-#   geom_violin(scale="width", adjust=3) +
-#   theme(text=element_text(size=18)) +
-#   labs(x="", y="Score") +
-#   facet_wrap(~EcoInt, ncol=2)
-
 ##Life History types
 ggplot(dat.long.sub, aes(factor(Sptype), fill=Usage)) +
   geom_bar(position='fill') +
@@ -118,37 +96,30 @@ ggplot(dat.long.sub, aes(factor(Sptype), fill=Usage)) +
   facet_wrap(~EcoInt, ncol=2) +
   theme_sleek()
   
-  
-  
-  #  geom_violin(scale="width", adjust=3) +
-  # theme(text=element_text(size=18)) +
-  # labs(x="", y="Score") +
-  # facet_wrap(~EcoInt, ncol=2)
 
 ###plot by revenue
 dat.long.sub=dat.long[dat.long$EcoInt %in% c("Habitat","Climate","Predation","Diet"),]
 dat.long.sub$EcoInt=factor(dat.long.sub$EcoInt, levels=c("Bycatch Target","Bycatch Other", "Habitat","Climate","Diet","Predation"))
-dat.long.sub=dat.long.sub[dat.long.sub$score>0,]
-dat.long.sub$Usage=factor(dat.long.sub$score, labels=c('Background','Qual.','Quant.'))
+#dat.long.sub=dat.long.sub[dat.long.sub$score>0,]
+dat.long.sub$Usage=factor(dat.long.sub$score, labels=c('None','Background','Qual.','Quant.'))
+dat.long.sub$Rev2013=dat.long.sub$Rev2013+1
 
 ggplot(dat.long.sub, aes((Rev2013), fill=Usage)) +
   geom_histogram(position='stack')+
-  stat_bin(bins=25) +
+  stat_bin(binwidth=1) +
   #geom_density() +
   scale_fill_brewer(palette='Greys') +
   scale_x_log10() +
- # facet_wrap(~EcoInt, ncol=2) +
+ facet_wrap(~EcoInt, ncol=2) +
  # geom_jitter(height=0.2, width=0) 
   xlab('2013 Revenue (USD)') +ylab('Count')+
   theme_sleek()
 
 
-
-
-
 ##What proportion of stocks have at least one 3?
+stocks.3<-filter(dat.long, score>2 & EcoInt %in% c('Habitat','Climate', 'Diet','Predation'))
 
-
+hab.3<- filter(stocks.3, EcoInt=='Habitat')
 
 
 dat$Habitat=as.factor(dat$Habitat)
