@@ -1,0 +1,207 @@
+Stock,source,Year,Rev2013,Council,Lab,Record,Habitat,Bycatch,Diet,Predator,Climate,TechInt,Competition,OF2001,OF0105,OF10-14,OF2014,Sptype,DietLab,Hab.comm,Clim.comm
+Goliath Grouper,WEB,2011,0,SA-GM,SEFSC,KM,3,0,0,0,1,1,0,1,1,0,0,groundfish,0,habitat filter,temperature catchability
+"Longspine thornyhead (California, Oregon, and Washington)",web,2011,NA,PFMC,NW-SW,KM,1,1,1,1,0,0,0,0,0,0,0,groundfish,0,NA,NA
+deep sea red crab,RAM,2009,5,NEFMC,NEFSC,KM,0,0,0,0,0,0,0,0,0,0,0,Invert,1,NA,NA
+"Greenstriped Rockfish Ca, OR, WA",RAM,2009,111,PFMC,NW-SW,KM,1,0,1,1,0,3,0,0,0,0,0,groundfish,0,NA,NA
+Cowcod - Southern California,web,2011,181,PFMC,NW-SW,KM,1,0,2,2,1,3,0,1,1,1,1,groundfish,0,NA,NA
+shortbelly rockfish pacific coast,web,2007,1154,PFMC,NW-SW,KM,1,0,1,3,1,3,0,0,0,0,0,forage,0,NA,NA
+Yelloweye rockfish Pacific Coast,RAM,2011,1575,PFMC,NW-SW,KM,1,0,1,1,1,1,0,0,1,1,1,groundfish,0,NA,NA
+Sculpin stock complex (BSAI),web,2014,2479,NPFMC,AFSC,LK,1,0,2,2,1,3,0,0,0,0,0,groundfish,1,NA,NA
+Sculpin stock complex (GOA),web,2011,2479,NPFMC,AFSC,LK,1,0,2,2,0,0,0,0,0,0,0,groundfish,1,NA,NA
+Aurora Rockfish,web,2013,5636,PFMC,NW-SW,KM,1,0,1,1,1,3,0,0,0,0,0,groundfish,0,NA,NA
+Greenspotted rockfish - Pacific Coast,web,2011,8674,PFMC,NW-SW,KM,1,0,0,0,0,1,0,0,0,0,0,groundfish,0,NA,NA
+"Starry Flounder off CA., OR., and WA.",RAM,2005,12517,PFMC,NW-SW,LK,3,0,1,0,0,0,0,0,0,0,0,groundfish,0,habitat filter,NA
+Canary rockfish - Pacific Coast,web,2007,17388,PFMC,NW-SW,KM,1,0,1,1,1,3,0,1,1,1,1,groundfish,0,NA,NA
+Splitnose Rockfish,RAM,2009,20371,PFMC,NW-SW,KM,1,0,1,1,1,3,0,0,0,0,0,groundfish,0,NA,NA
+California scorpionfish - Southern California,web,2005,28118,PFMC,NW-SW,KM,1,0,1,0,0,1,0,0,0,0,0,groundfish,0,NA,NA
+Deepwater Flatfish GOA,web,2013,30657,NPFMC,AFSC,KM,1,0,0,0,0,3,0,0,0,0,0,groundfish,1,NA,NA
+Bocaccio - Southern Pacific Coast,web,2009,39734,PFMC,NW-SW,KM,2,0,1,1,2,3,0,1,1,0,0,groundfish,0,NA,NA
+Blue Rockfish ,RAM,2008,43003,PFMC,NW-SW,LK,1,0,1,1,1,1,0,0,0,0,0,groundfish,0,NA,NA
+wreckfish - South Atlantic,web,2014,64612,SAFMC,SEFSC,KM,0,0,0,0,0,0,0,0,0,0,0,groundfish,0,NA,NA
+Gray Triggerfish - Gulf of Mexico,web,2006,78245,GMFMC,SEFSC,KM,1,0,0,0,0,3,0,0,0,1,1,groundfish,0,NA,NA
+Spiny dogfish Pacific Coast,web,2011,80258,PFMC,NW-SW,KM,1,0,1,1,1,3,0,0,0,0,0,groundfish,0,NA,NA
+Red Snapper - South Atlantic,web,2010,127613,SAFMC,SEFSC,KM,1,0,0,1,1,3,0,1,1,1,1,groundfish,0,NA,NA
+Darkblotched rockfish Pacific Coast,web,2013,131976,PFMC,NW-SW,KM,1,0,1,1,1,3,0,1,1,0,0,groundfish,0,NA,NA
+Blackgill rockfish Pacific Coast,RAM,2011,144129,PFMC,NW-SW,KM,1,0,1,1,1,2,0,0,0,0,0,groundfish,0,NA,NA
+Vermilion Rockfish Pacific Coast,web,2005,157649,PFMC,NW-SW,KM,1,0,0,0,0,0,0,0,0,0,0,groundfish,0,NA,NA
+Black rockfish - Southern Pacific Coast,web,2007,157747,PFMC,NW-SW,KM,3,0,1,1,0,3,0,0,0,0,0,groundfish,0,habitat filter,NA
+Pacific Sanddab,web,2013,164563,PFMC,NW-SW,KM,1,1,1,1,1,0,0,0,0,0,0,groundfish,0,NA,NA
+Hogfish - Southeast Florida,web,2013,110884,SAFMC,SEFSC,KM,3,0,1,0,1,0,0,0,0,0,0,groundfish,0,habitat filter,NA
+Hogfish Gulf of Mexico and South Atlantic,WEB,2013,110884,SA-GM,SEFSC,KM,3,0,1,0,1,0,0,0,0,0,0,groundfish,0,habitat filter,NA
+English sole - Pacific Coast,web,2007,242764,PFMC,NW-SW,KM,1,0,0,0,0,1,0,0,0,0,0,groundfish,0,NA,NA
+Yellowtail flounder- Southern New England / Mid-Atlantic,web,2012,243122,NEFMC,NEFSC,KM,1,0,0,1,3,3,0,0,1,1,0,groundfish,1,NA,env drivers recruitment
+Snowy Grouper - South Atlantic,web,2013,245837,SAFMC,SEFSC,KM,1,0,0,0,0,3,0,1,1,1,1,groundfish,0,NA,NA
+Winter flounder - Southern New England / Mid-Atlantic,web,2011,273016,NEFMC,NEFSC,KM,1,0,0,2,3,3,0,0,1,1,1,groundfish,1,NA,env drivers recruitment 
+Cobia South Atlantic,WEB,2013,285188,SAFMC,SEFSC,KM,0,0,0,0,1,3,0,0,0,0,0,pelagic,0,NA,NA
+Yellowtail Snapper Southern Atlantic Coast ,RAM,2012,292174,SA-GM,SEFSC,KM,3,0,0,1,1,1,0,0,0,0,0,groundfish,0,habitat filter species,NA
+Kelp greenling - Oregon,web,2005,292241,PFMC,NW-SW,KM,1,0,0,0,0,3,0,0,0,0,0,groundfish,0,NA,NA
+Red Porgy,RAM,2006,296981,SAFMC,SEFSC,LK,0,0,0,0,0,0,0,1,1,1,1,groundfish,0,NA,NA
+Cobia Gulf of Mexico,WEB,2012,312972,GMFMC,SEFSC,KM,0,0,0,0,1,3,0,0,0,0,0,pelagic,0,NA,NA
+Red grouper South Atlantic,RAM,2010,356662,SAFMC,SEFSC,KM,3,0,0,0,3,0,0,1,1,1,0,groundfish,0,habitat filter,temp depend catchability
+Gopher Rockfish Northern California,RAM,2005,392098,PFMC,NW-SW,LK,1,0,0,1,0,0,0,0,0,0,0,groundfish,0,NA,NA
+Widow rockfish Pacific Coast,RAM,2011,459034,PFMC,NW-SW,KM,1,0,1,0,0,3,0,1,1,0,0,groundfish,0,NA,NA
+Black Grouper Gulf of Mexico and South Atlantic,RAM,2010,459634,SA-GM,SEFSC,KM,3,0,0,0,1,0,0,0,0,0,0,groundfish,0,habitat filter species,NA
+Chilipepper - Southern Pacific Coast,web,2007,471986,PFMC,NW-SW,KM,1,1,1,1,3,1,0,0,0,0,0,groundfish,0,NA,time varying growth PDO regime
+Mutton Snapper - South Atlantic and Gulf of Mexico,web,2008,472151,SA-GM,SEFSC,KM,3,0,0,0,3,0,0,0,0,0,0,groundfish,0,habitat filter,temp depend catchability
+Arrowtooth flounder - Pacific Coast,web,2007,487093,PFMC,NW-SW,KM,1,0,2,1,0,3,0,0,0,0,0,groundfish,0,NA,NA
+Coho salmon - Oregon Production Index Area: Columbia River Early Hatchery,web,2014,125797.75,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,0,0,0,pelagic,0,NA,NA
+Coho salmon - Oregon Production Index Area: Columbia River Late Hatchery,web,2014,125797.75,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,0,0,0,pelagic,0,NA,NA
+Coho salmon - Oregon Production Index Area: Lower Columbia Natural,web,2014,125797.75,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,0,0,0,pelagic,0,NA,NA
+Coho salmon - Oregon Production Index Area: Oregon Coast Natural,web,2014,125797.75,PFMC,NW-SW,KM,1,1,0,1,3,2,0,0,0,0,0,pelagic,0,NA,env driver forecast
+Atlantic Halibut - Northwestern Atlantic,web,2008,505826,NEFMC,NEFSC,KM,0,0,0,0,0,3,0,1,1,1,1,groundfish,1,NA,NA
+Cabezon California and Oregon Coast,RAM,2009,512962,PFMC,NW-SW,KM,1,0,0,0,1,0,0,0,0,0,0,groundfish,0,NA,NA
+Black rockfish - Northern Pacific Coast,web,2007,521283,PFMC,NW-SW,KM,1,0,0,0,1,3,0,0,0,0,0,groundfish,0,NA,NA
+Greater Amberjack - South Atlantic,web,2008,613151,SAFMC,SEFSC,KM,1,0,0,0,0,3,0,0,0,0,0,groundfish,0,NA,NA
+Blueline Tilefish South Atlantic,WEB,2013,624716,SAFMC,SEFSC,KM,2,0,1,0,2,1,0,0,0,0,1,groundfish,0,NA,NA
+Longnose skate - Pacific Coast,web,2007,904387,PFMC,NW-SW,KM,1,0,0,0,0,3,0,0,0,0,0,groundfish,0,NA,NA
+Greater Amberjack Gulf of Mexico,WEB,2014,1048361,GMFMC,SEFSC,KM,1,0,0,0,0,0,0,1,1,1,1,pelagic,0,NA,NA
+Northern Shortfin Squid Eastern Shelf,RAM,2006,1131530,MAFMC,NEFSC,KM,0,0,0,0,0,0,0,0,0,0,0,forage,1,NA,NA
+Lingcod Pacific Coast ,RAM,2009,1239079,PFMC,NW-SW,KM,1,0,1,1,1,3,0,1,1,0,0,groundfish,0,NA,NA
+Yellowtail rockfish Pacific Coast Northern stock (2005),RAM,2005,1323495,PFMC,NW-SW,LK,0,0,0,0,0,3,0,0,0,0,0,groundfish,0,NA,NA
+Spanish mackerel Gulf of Mexico,RAM,2013,1352430,GMFMC,SEFSC,KM,0,0,0,0,0,3,0,0,0,0,0,pelagic,0,NA,NA
+Black Sea Bass - South Atlantic,web,2011,1407192,SAFMC,SEFSC,KM,3,0,0,0,1,3,0,1,1,1,0,groundfish,0,habitat filter,NA
+Greenland Turbot (or halibut) - BSAI,web,2014,1520419,NPFMC,AFSC,LK,1,0,0,1,1,3,0,0,0,0,0,groundfish,1,NA,NA
+Rougheye and Blackspotted Rockfish,web,2013,1535174,PFMC,NW-SW,KM,1,0,1,1,1,3,0,0,0,0,0,groundfish,0,NA,NA
+Pacific Chub Mackerel - Pacific Coast,web,2014,1633673,PFMC,SWFSC,KM,1,0,1,1,2,2,0,0,0,0,0,pelagic,0,NA,NA
+Butterfish,RAM,2014,1661267,NEFMC,NEFSC,KM,1,0,1,3,3,3,0,0,1,1,0,forage,1,NA,IRA temp
+Tilefish - South Atlantic,web,2011,1668022,SAFMC,SEFSC,KM,3,0,0,0,0,0,0,1,1,0,0,groundfish,0,habitat filter,NA
+Gag - South Atlantic,web,2006,1882561,SAFMC,SEFSC,KM,2,0,0,0,1,0,0,1,0,0,0,groundfish,0,NA,NA
+Atlantic Mackerel ,RAM,2006,1923049,MAFMC,NEFSC,KM,0,0,0,2,2,0,0,0,0,0,0,pelagic,1,NA,NA
+King Mackerel Gulf of Mexico,WEB,2014,1956045,GMFMC,SEFSC,KM,1,0,1,0,2,3,0,0,0,0,0,pelagic,0,NA,NA
+Spiny dogfish - Atlantic Coast,web,2006,2117991,NE-Mid,NEFSC,KM,1,0,1,0,2,3,0,1,1,0,0,groundfish,1,NA,NA
+bluefish - atlantic coast,web,2005,2253518,MAFMC,NEFSC,KM,1,0,0,0,0,0,0,1,1,0,0,groundfish,1,NA,NA
+Rex sole (GOA),web,2011,2815691,NPFMC,AFSC,LK,1,2,2,2,1,0,0,0,0,0,0,groundfish,1,NA,NA
+Gag Gulf of Mexico,WEB,2014,2830502,GMFMC,SEFSC,KM,0,0,1,2,3,3,0,0,0,1,0,groundfish,0,NA,mortality red tide index
+Vermilion Snapper - South Atlantic,web,2008,2995245,SAFMC,SEFSC,KM,0,0,0,0,3,3,0,1,1,0,0,groundfish,0,NA,temp depend catchability
+Yellowedge grouper Gulf of Mexico,RAM,2011,3030992,GMFMC,SEFSC,KM,3,0,0,0,0,2,0,0,0,0,0,groundfish,0,habitat filter,NA
+"Shortspine Thornyhead - Washington, Oregon, California 2013",web,2013,3171584,PFMC,NW-SW,KM,1,0,1,1,0,0,0,0,0,0,0,groundfish,0,NA,NA
+Spanish Mackerel South Atlantic,RAM,2008,3696665,SAFMC,SEFSC,KM,0,0,0,0,1,1,0,0,0,0,0,pelagic,0,NA,NA
+Witch Flounder,web,2008,3735330,NEFMC,NEFSC,KM,0,0,0,0,0,3,0,0,0,1,1,groundfish,1,NA,NA
+Yellowtail flounder - Cape Cod / Gulf of Maine,web,2008,1978402.5,NEFMC,NEFSC,KM,0,0,0,0,0,3,0,0,1,1,1,groundfish,1,NA,NA
+Yellowtail flounder - Georges Bank,web,2014,1978402.5,NEFMC,NEFSC,KM,1,0,0,0,0,3,0,0,0,1,1,groundfish,1,NA,NA
+Vermilion Snapper - Gulf of Mexico,web,2006,4001792,GMFMC,SEFSC,KM,3,0,0,1,0,3,0,0,1,0,0,groundfish,0,habitat filter,NA
+Acadian Redfish Gulf of Maine/Georges Bank 2008,RAM,2008,4337163,NEFMC,NEFSC,LK,0,0,0,0,0,0,0,1,1,0,0,groundfish,1,NA,NA
+American Plaice - Gulf of Maine / George's Bank,web,2008,4688995,NEFMC,NEFSC,KM,0,0,0,0,0,3,0,0,1,0,0,groundfish,1,NA,NA
+Monkfish Southern Georges Bank / Mid-Atlantic,RAM,2010,5137183,NE-Mid,NEFSC,KM,1,0,2,0,2,3,1,1,1,0,0,groundfish,1,NA,NA
+King Mackerel South Atlantic,WEB,2014,5213393,SAFMC,SEFSC,KM,1,0,1,0,3,3,0,0,0,0,0,pelagic,0,NA,temp depend catchability and recruitment
+Yellowtail Snapper - Gulf of Mexico,RAM,2012,5541535,SA-GM,SEFSC,KM,3,0,0,1,1,1,0,0,0,0,0,groundfish,0,habitat filter,NA
+Golden Tilefish Mid-Atlantic Coast,RAM,2014,5873341,MAFMC,NEFSC,KM,2,0,0,0,2,2,1,1,1,0,0,groundfish,1,NA,NA
+Haddock George's Bank,web,2008,3001240,NEFMC,NEFSC,KM,0,0,0,0,0,3,0,0,1,0,0,groundfish,1,NA,NA
+Haddock Gulf of Maine,web,2014,3001240,NEFMC,NEFSC,KM,1,0,0,0,2,3,0,0,1,0,0,groundfish,1,NA,NA
+Coho salmon - Puget Sound: Hood Canal,web,2014,465171.4615,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,0,0,0,pelagic,0,NA,NA
+Coho salmon - Puget Sound: Skagit,web,2014,465171.4615,PFMC,NW-SW,KM,1,1,0,1,3,2,0,0,0,0,0,pelagic,0,NA,env driver forecast
+Coho salmon - Puget Sound: Snohomish,web,2014,465171.4615,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,0,0,0,pelagic,0,NA,NA
+Coho salmon - Puget Sound: South Puget Sound Hatchery,web,2014,465171.4615,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,0,0,0,pelagic,0,NA,NA
+Coho salmon - Puget Sound: Stillaguamish,web,2014,465171.4615,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,0,0,0,pelagic,0,NA,NA
+Coho salmon - Washington Coast: Grays Harbor,web,2014,465171.4615,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,0,0,0,pelagic,0,NA,NA
+Coho salmon - Washington Coast: Hoh,web,2014,465171.4615,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,0,0,0,pelagic,0,NA,NA
+Coho salmon - Washington Coast: Queets,web,2014,465171.4615,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,0,0,0,pelagic,0,NA,NA
+Coho salmon - Washington Coast: Quillayute Fall,web,2014,465171.4615,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,0,0,0,pelagic,0,NA,NA
+Coho salmon - Washington Coast: Quillayute Summer Hatchery,web,2014,465171.4615,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,0,0,0,pelagic,0,NA,NA
+Coho salmon - Washington Coast: Strait of Juan de Fuca,web,2014,465171.4615,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,0,0,0,pelagic,0,NA,NA
+Coho salmon - Washington Coast: Willapa Bay Hatchery,web,2014,465171.4615,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,0,0,0,pelagic,0,NA,NA
+Coho salmon - Washington Coast: Willapa Bay Natural,web,2014,465171.4615,PFMC,NW-SW,KM,1,1,0,1,0,2,0,0,0,0,0,pelagic,0,NA,NA
+Petrale sole Pacific Coast,web,2013,6179659,PFMC,NW-SW,KM,1,1,1,1,1,0,0,0,0,1,0,groundfish,0,NA,NA
+Other skate complex (GOA),web,2014,3170836.5,NPFMC,AFSC,LK,1,0,1,1,0,3,0,0,0,0,0,groundfish,1,NA,NA
+Skate complex (BSAI),web,2014,3170836.5,NPFMC,AFSC,LK,1,0,2,2,2,3,0,0,0,0,0,groundfish,1,NA,NA
+White hake - Gulf of Maine / Georges Bank,web,2013,6484444,NEFMC,NEFSC,KM,1,0,0,0,0,3,0,0,1,1,0,groundfish,1,NA,NA
+black sea bass,RAM,2009,6602229,NEFMC,NEFSC,KM,0,0,0,0,3,0,0,0,0,0,0,groundfish,1,NA,IRA temp
+Northeast skate species complex,RAM,2007,3669652.5,NEFMC,NEFSC,KM,0,0,2,0,0,1,0,0,0,0,0,groundfish,1,NA,NA
+Skate species,RAM,2009,3669652.5,NEFMC,NEFSC,KM,0,0,0,0,0,1,0,1,1,1,1,groundfish,1,NA,NA
+Flathead sole (BSAI),web,2014,3782814.5,NPFMC,AFSC,LK,1,2,2,2,3,0,0,0,0,0,0,groundfish,1,NA,temp depend catchability
+Flathead sole (GOA),RAM,2009,3782814.5,NPFMC,AFSC,LK,1,0,2,2,0,1,0,0,0,0,0,groundfish,1,NA,NA
+Dover Sole Pacific Coast,RAM,2011,7738458,PFMC,NW-SW,KM,1,0,1,0,1,0,0,0,0,0,0,groundfish,0,NA,NA
+Tanner Crab Bering Sea,RAM,2013,8106713,NPFMC,AFSC,KM,0,0,0,2,3,3,1,1,1,1,0,Invert,1,NA,regime filter recruitment
+Alaska Plaice,web,2014,2771964.333,NPFMC,AFSC,KM,0,1,2,1,3,3,0,0,0,0,0,groundfish,1,NA,IRA bottom temp
+Kamchatka flounder (BSAI),web,2014,2771964.333,NPFMC,AFSC,LK,1,1,1,1,3,1,0,0,0,0,0,groundfish,1,NA,temp depend catchability
+Shallow-water flatfish,web,2009,2771964.333,NPFMC,AFSC,LK,0,1,1,0,0,0,0,0,0,0,0,groundfish,1,NA,NA
+Blackspotted AND Rougheye Rockfish - BSAI (2008),RAM,2008,770763.5455,NPFMC,AFSC,LK,0,0,0,0,0,2,0,0,0,0,0,groundfish,1,NA,NA
+Blackspotted and Rougheye Rockfish (GOA),web,2014,770763.5455,NPFMC ,AFSC,LK,1,2,1,1,1,3,0,0,0,0,0,groundfish,1,NA,NA
+Demersal shelf rockfish complex (GOA - includes Yelloweye),web,2014,770763.5455,NPFMC,AFSC,LK,3,0,1,1,1,3,0,0,0,0,0,groundfish,1,habitat density multiplier,NA
+Dusky Rockfish GOA,web,2013,770763.5455,NPFMC,AFSC,KM,1,2,1,1,1,3,0,0,0,0,0,groundfish,1,NA,NA
+Northern rockfish (BSAI),web,2014,770763.5455,NPFMC,AFSC,LK,1,0,2,1,0,3,0,0,0,0,0,groundfish,1,NA,NA
+Northern rockfish (GOA),web,2014,770763.5455,NPFMC,AFSC,LK,1,2,1,1,1,0,0,0,0,0,0,groundfish,1,NA,NA
+Other rockfish (BSAI),web,2014,770763.5455,NPFMC,AFSC,LK,1,0,1,1,0,3,0,0,0,0,0,groundfish,1,NA,NA
+Other rockfish (GOA),web,2011,770763.5455,NPFMC,AFSC,LK,1,1,1,1,1,0,0,0,0,0,0,groundfish,1,NA,NA
+Rougheye and Blackspotted Rockfish BSAI,web,2014,770763.5455,NPFMC,AFSC,KM,0,0,0,0,0,3,0,0,0,0,0,groundfish,1,NA,NA
+Shortraker rockfish (BSAI),web,2014,770763.5455,NPFMC,AFSC,LK,1,0,1,0,0,3,0,0,0,0,0,groundfish,1,NA,NA
+Shortraker rockfish (GOA),web,2011,770763.5455,NPFMC,AFSC,LK,1,2,1,1,1,0,0,0,0,0,0,groundfish,1,NA,NA
+Silver Hake,RAM,2006,8699831,NEFMC,NEFSC,KM,0,0,1,1,3,0,0,1,0,0,0,groundfish,1,NA,temp depend catchability
+Arrowtooth flounder BSAI,web,2014,4573720.5,NPFMC,AFSC,LK,1,2,2,2,3,3,1,0,0,0,0,groundfish,1,NA,IRA bottom temp
+Arrowtooth Flounder GOA ,web,2013,4573720.5,NPFMC,AFSC,KM,1,0,2,2,0,3,0,0,0,0,0,groundfish,1,NA,NA
+Winter flounder - George's Bank,web,2011,4813454,NEFMC,NEFSC,KM,1,0,0,2,3,3,0,0,0,1,0,groundfish,1,NA,env drivers recruitment 
+Winter Flounder - Gulf of Maine,web,2008,4813454,NEFMC,NEFSC,KM,0,0,0,0,0,3,0,0,0,1,0,groundfish,1,NA,NA
+scup,RAM,2009,9669109,MAFMC,NEFSC,KM,0,0,0,0,0,0,0,1,1,0,0,forage,1,NA,NA
+Atlantic cod Eastern Georges Bank,web,2013,3463679,NEFMC,NEFSC,KM,0,0,0,0,0,3,0,0,0,0,0,groundfish,1,NA,NA
+Atlantic cod Georges Bank,RAM,2013,3463679,NEFMC,NEFSC,KM,1,0,0,0,0,0,0,0,1,1,1,groundfish,1,NA,NA
+Atlantic cod Gulf of Maine,RAM,2013,3463679,NEFMC,NEFSC,KM,0,0,0,0,0,0,0,0,0,1,1,groundfish,1,NA,NA
+Pollock - Gulf of Maine / George's Bank,web,2010,11395943,NEFMC,NEFSC,KM,0,1,2,0,3,3,0,0,1,1,0,groundfish,1,NA,temp depend catchability
+Chinook salmon - Oregon Coast: Central and Northern Oregon,web,2014,5951599.5,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Oregon Coast: Southern Oregon,web,2014,5951599.5,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Monkfish Gulf of Maine / Northern Georges Bank,RAM,2010,13586447,NE-Mid,NEFSC,KM,1,0,2,0,2,3,1,1,1,0,0,groundfish,1,NA,NA
+Pink shrimp Gulf of Mexico,RAM,2012,14678259,GMFMC,SEFSC,KM,0,0,0,0,0,0,0,0,0,0,0,Invert,0,NA,NA
+Pacific Sardine,web,2014,14819775,PFMC,SWFSC,KM,1,0,0,0,3,3,0,0,0,0,0,forage,0,NA,temp dep assignment to fleets
+Atka mackerel (BSAI),web,2014,15279265,NPFMC,AFSC,LK,2,1,2,2,1,3,1,0,0,0,0,forage,1,habitat filter species,NA
+Red Grouper - Gulf of Mexico,web,2006,16221341,GMFMC,SEFSC,KM,3,0,0,1,1,3,0,1,0,0,0,groundfish,0,habitat filter,NA
+Chinook salmon - Columbia River Basin: Lower River Hatchery Fall,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Columbia River Basin: Lower River Hatchery Spring,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Columbia River Basin: Mid-River Bright Hatchery Fall,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Columbia River Basin: North Lewis River Fall,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Columbia River Basin: Snake River Fall,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Columbia River Basin: Snake River Spring/Summer,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Columbia River Basin: Spring Creek Hatchery Fall,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Columbia River Basin: Upper River Bright Fall,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Columbia River Basin: Upper River Spring,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Columbia River Basin: Upper River Summer,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Columbia River Basin: Upper Willamette Spring,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Puget Sound: Cedar River Summer/Fall,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Puget Sound: Eastern Strait of Juan de Fuca Summer/Fall,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Puget Sound: Green River Summer/Fall,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Puget Sound: Nooksack Spring Early,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Puget Sound: Puyallup Summer/Fall,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Puget Sound: Skagit Spring,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Puget Sound: Skagit Summer/Fall,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Puget Sound: Snohomish Summer/Fall,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,3,0,0,0,0,0,0,pelagic,0,NA,env driver forecast
+Chinook salmon - Puget Sound: Stillaguamish Summer/Fall,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,3,0,0,0,0,0,0,pelagic,0,NA,env driver forecast
+Chinook salmon - Puget Sound: White River Spring,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Washington Coast: Hoko Summer/Fall,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Washington Coast: Queets Fall,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Washington Coast: Quinault Fall Hatchery,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Washington Coast: Willapa Bay Fall Hatchery,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Washington Coast: Willapa Bay Fall Natural,web,2014,642998.1538,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Sablefish Pacific Coast,RAM,2011,19572546,PFMC,NW-SW,KM,1,0,1,1,3,3,0,0,0,0,0,groundfish,0,NA,env drivers recruitment
+Red snapper Gulf of Mexico,RAM,2013,20492987,GMFMC,SEFSC,KM,1,0,1,1,2,3,1,1,1,1,1,groundfish,0,NA,NA
+Chinook salmon - California Central Valley: Sacramento River Fall,web,2014,7652289.667,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,1,0,pelagic,0,NA,NA
+Chinook salmon - California Central Valley: Sacramento River Winter,web,2014,7652289.667,PFMC,NW-SW,KM,1,1,0,1,0,1,0,0,0,0,0,pelagic,0,NA,NA
+Chinook salmon - Northern California Coast: Klamath River Fall,web,2014,7652289.667,PFMC,NW-SW,KM,1,1,0,1,0,0,0,0,0,0,0,pelagic,0,NA,NA
+Ocean quahog,web,2009,23651355,MAFMC,NEFSC,KM,3,1,0,0,0,2,0,0,0,0,0,Invert,1,total habitat area,NA
+Pacific Ocean Perch (BSAI),web,2014,13081682,NPFMC,AFSC,LK,1,2,2,1,0,0,0,0,0,0,0,groundfish,1,NA,NA
+Pacific Ocean Perch (GOA),web,2014,13081682,NPFMC,AFSC,LK,1,2,1,1,1,3,0,0,0,0,0,groundfish,1,NA,NA
+Longfin inshore squid Atlantic Coast,RAM,2010,26549977,MAFMC,NEFSC,KM,3,0,1,2,1,0,0,0,0,0,0,forage,1,habitat filter,NA
+Summer Flounder,web,2013,27444274,MAFMC,NEFSC,KM,1,0,1,1,2,3,0,0,1,0,0,groundfish,1,NA,NA
+Atlantic surfclam - Mid-Atlantic Coast,web,2013,31722542,MAFMC,NEFSC,KM,3,0,0,0,2,0,0,0,0,0,0,Invert,1,total habitat area,NA
+Atlantic herring,web,2012,31850145,NEFMC,NEFSC,KM,1,0,0,3,3,0,0,0,0,0,0,forage,1,NA,recruit temp
+Northern rock sole Eastern Bering Sea and Aleutian Islands,RAM,2012,16367921,NPFMC,AFSC,KM,1,2,2,1,3,2,0,0,0,0,0,groundfish,1,NA,temp depend catchability
+Northern/Southern rock sole (GOA),web,2014,16367921,NPFMC,AFSC,LK,1,0,0,0,1,0,0,0,0,0,0,groundfish,1,NA,NA
+Tilefish Gulf of Mexico,RAM,2011,123752803,GMFMC,SEFSC,KM,3,0,0,0,1,2,0,0,0,0,0,groundfish,0,habitat filter,NA
+Spiny lobster - Southeast US,web,2005,50185930,SA-GM,SEFSC,KM,3,1,1,0,1,0,0,0,0,0,0,Invert,0,habitat filter,NA
+Yellowfin sole BSAI,web,2014,60886691,NPFMC,AFSC,KM,1,2,2,1,3,3,0,0,0,0,0,groundfish,1,habitat filter,temp depend catchability and growth
+Whiting Pacific Coast,web,2014,61321406,PFMC,NW-SW,KM,1,2,1,1,1,1,0,0,1,0,0,groundfish,0,NA,NA
+Sablefish Alaska,web,2014,82111039,NPFMC,AFSC,KM,1,2,1,1,2,3,1,0,0,0,0,groundfish,1,NA,NA
+Blue King Crab Pribilof Islands,RAM,2013,16573920.4,NPFMC,AFSC,KM,1,0,0,1,2,3,1,0,1,1,0,Invert,1,NA,NA
+Blue King Crab Saint Matthew,RAM,2013,16573920.4,NPFMC,ADFG,KM,1,0,0,0,0,3,0,1,1,1,1,Invert,0,NA,NA
+Red King Crab Bristol Bay,RAM,2013,16573920.4,NPFMC,ADFG,KM,1,0,0,2,3,3,0,0,0,0,0,Invert,0,habitat filter,regime filter recruitment
+Red King Crab Norton Sound,RAM,2013,16573920.4,NPFMC,ADFG,KM,1,0,0,0,0,2,0,0,0,0,0,Invert,0,NA,NA
+Red King Crab Pribilof Islands,RAM,2013,16573920.4,NPFMC,AFSC,KM,0,0,0,0,3,3,0,0,0,0,0,Invert,1,NA,regime filter recruitment
+Snow crab Bering Sea,RAM,2013,132369655,NPFMC,AFSC,KM,0,1,0,1,2,3,1,0,1,0,0,Invert,1,NA,NA
+Pacific cod Bering Sea and Aleutian Islands,RAM,2012,78064540,NPFMC,AFSC,KM,2,2,1,1,2,0,0,0,0,0,0,groundfish,1,NA,NA
+Pacific cod Gulf of Alaska,RAM,2013,78064540,NPFMC,AFSC,KM,1,2,2,2,2,0,0,0,0,0,0,groundfish,1,NA,NA
+White shrimp Gulf of Mexico,RAM,2012,230775707,GMFMC,SEFSC,KM,0,0,0,0,0,0,0,0,0,0,0,Invert,0,NA,NA
+Brown shrimp Gulf of Mexico,web,2012,245720719,GMFMC,SEFSC,KM,0,0,0,0,0,0,0,0,0,0,0,Invert,0,NA,NA
+Walleye pollock Aleutian Islands,RAM,2012,101608810,NPFMC,AFSC,KM,1,2,2,2,0,0,1,0,0,0,0,groundfish,1,NA,NA
+Walleye pollock Bogoslof,web,2014,101608810,NPFMC,AFSC,LK,1,1,0,1,0,3,0,0,0,0,0,groundfish,1,NA,NA
+Walleye pollock Eastern Bering Sea,web,2014,101608810,NPFMC,AFSC,LK,1,2,1,2,2,3,0,0,0,0,0,groundfish,1,NA,NA
+Walleye pollock GOA,web,2014,101608810,NPFMC,AFSC,LK,0,2,2,2,1,2,0,0,0,0,0,groundfish,1,NA,NA
+Sea Scallop Georges Bank / Mid-Atlantic Bight,web,2014,466920237,NEFMC,NEFSC,KM,3,0,2,2,2,0,0,0,0,0,0,Invert,1,total habitat area,NA
+atlantic wolffish,RAM,2009,NA,NEFMC,NEFSC,KM,1,0,1,0,0,0,0,0,0,1,1,groundfish,1,NA,NA
+Thornyheads (GOA),web,2011,NA,NPFMC,AFSC,LK,1,1,2,2,0,3,0,0,0,0,0,groundfish,1,NA,NA
