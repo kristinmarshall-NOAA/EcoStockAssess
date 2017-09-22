@@ -108,7 +108,9 @@ ggplot(dat.long.sub, aes(factor(Sptype), fill=Usage)) +
   facet_wrap(~EcoInt, ncol=2) +
   theme_sleek()
   
-
+pel.dat= dat.long.sub %>%
+  filter(Sptype=='pelagic')
+  
 ###plot by revenue
 dat.long.sub=dat.long[dat.long$EcoInt %in% c("Habitat","Climate","Predation","Diet"),]
 dat.long.sub$EcoInt=factor(dat.long.sub$EcoInt, levels=c("Bycatch Target","Bycatch Other", "Habitat","Climate","Diet","Predation"))
