@@ -55,9 +55,10 @@ dat.sub$Usage=factor(dat.sub$score, labels=c('Background','Qual.','Quant.'))
 
 
 ##Figure 1, a histogram of frequency of scores by category of ecol. info
-ggplot(dat.sub, aes(x=factor(EcoInt), y=per.count, fill=Usage), cex=2) +
+ggplot(dat.sub, aes(x=factor(EcoInt), y=per.count, fill=Usage, color=Usage), cex=2) +
   geom_bar(width=.7, position="dodge", stat="identity") +
   scale_fill_brewer(palette='Greys')+
+  scale_color_manual(values=rep('black',3))+
   #theme(legend.title=element_blank(), text=element_text(size=18),panel.background = element_rect(fill = 'grey55'),
   #      panel.grid.major = element_line(colour = "grey65"),
   #      panel.grid.minor = element_line(colour = "grey65")) +
@@ -83,11 +84,45 @@ summ.dat<- dat.long.sub %>%
 
   #filter(score>1)
 
+v1=dat.long.sub$score[dat.long.sub$DietLab=='No diet lab'& dat.long.sub$EcoInt=='Predation']
+v1.p=rep(0,length(v1))
+v1.p[which(v1>1)]=1
+
+v2=dat.long.sub$score[dat.long.sub$DietLab=='Diet lab'& dat.long.sub$EcoInt=='Predation']
+v2.p=rep(0,length(v2))
+v2.p[which(v2>1)]=1
+
+wilcox.test(v1,v2, alternative="less")
+wilcox.test(v1.p,v2.p, alternative="less")
+
+
 ##Overfishing
 dat.long.sub=dat.long[dat.long$EcoInt!="Competition",]
 dat.long.sub$EcoInt=factor(dat.long.sub$EcoInt, levels=c("Bycatch Target","Bycatch Other", "Habitat","Climate","Diet","Predation"))
 dat.long.sub$Usage=factor(dat.long.sub$score, labels=c('None','Background','Qual.','Quant.'))
 dat.long.sub$OF0105=factor(dat.long.sub$OF0105, labels=c('Not overfished','Overfished'))
+
+v1=dat.long.sub$score[dat.long.sub$OF0105=='Not overfished'& dat.long.sub$EcoInt=='Bycatch Target']
+v1.p=rep(0,length(v1))
+v1.p[which(v1>1)]=1
+
+v2=dat.long.sub$score[dat.long.sub$OF0105=='Overfished'& dat.long.sub$EcoInt=='Bycatch Target']
+v2.p=rep(0,length(v2))
+v2.p[which(v2>1)]=1
+
+wilcox.test(v1,v2, alternative="less")
+wilcox.test(v1.p,v2.p, alternative="less")
+
+#Wilcoxon rank sum test with continuity correction
+#data:  v1 and v2
+#W = 2809, p-value = 0.01441
+#alternative hypothesis: true location shift is less than 0
+
+
+#Wilcoxon rank sum test with continuity correction
+#data:  v1 and v2
+#W = 2199, p-value = 3.024e-05
+#alternative hypothesis: true location shift is less than 0
 
 
 ggplot(dat.long.sub, aes(OF0105, fill=Usage)) +
@@ -100,7 +135,9 @@ ggplot(dat.long.sub, aes(OF0105, fill=Usage)) +
 
 
 ##Life History types
-dat.long.sub$Sptype=factor(dat.long.sub$Sptype, labels=c('forage', 'demersal', 'invert', 'pelagic'))
+
+dat.long.sub=dat.long[dat.long$EcoInt!="Competition",]
+dat.long.sub$Sptype=factor(dat.long.sub$Sptype, labels=c('sm. pel.', 'demersal', 'invert', 'lg. pel.'))
 ggplot(dat.long.sub, aes(factor(Sptype), fill=Usage)) +
   geom_bar(position='fill') +
   scale_fill_brewer(palette='Greys') +
@@ -111,6 +148,80 @@ ggplot(dat.long.sub, aes(factor(Sptype), fill=Usage)) +
 pel.dat= dat.long.sub %>%
   filter(Sptype=='pelagic')
   
+v1=dat.long.sub$score[dat.long.sub$EcoInt=='Bycatch Other']
+sp=dat.long.sub$Sptype[dat.long.sub$EcoInt=='Bycatch Other']
+v1.p=rep(0,length(v1))
+v1.p[which(v1>1)]=1
+kruskal.test(v1.p,sp)
+#Kruskal-Wallis rank sum test
+
+#data:  v1.p and sp
+#Kruskal-Wallis chi-squared = 12.462, df = 3, p-value = 0.005957
+
+v1=dat.long.sub$score[dat.long.sub$EcoInt=='Diet']
+sp=dat.long.sub$Sptype[dat.long.sub$EcoInt=='Diet']
+v1.p=rep(0,length(v1))
+v1.p[which(v1>1)]=1
+kruskal.test(v1.p,sp)
+##Kruskal-Wallis rank sum test
+#data:  v1.p and sp
+#Kruskal-Wallis chi-squared = 12.656, df = 3, p-value = 0.005443
+
+#pairwise comparisons
+v2=dat.long.sub$score[dat.long.sub$EcoInt=='Diet' & dat.long.sub$Sptype=="sm. pel."]
+v2.p=rep(0,length(v2))
+v2.p[which(v2>1)]=1
+
+v3=dat.long.sub$score[dat.long.sub$EcoInt=='Diet' & dat.long.sub$Sptype=="lg. pel."]
+v3.p=rep(0,length(v3))
+v3.p[which(v3>1)]=1
+
+v4=dat.long.sub$score[dat.long.sub$EcoInt=='Diet' & dat.long.sub$Sptype=="demersal"]
+v4.p=rep(0,length(v4))
+v4.p[which(v4>1)]=1
+
+v5=dat.long.sub$score[dat.long.sub$EcoInt=='Diet' & dat.long.sub$Sptype=="invert"]
+v5.p=rep(0,length(v5))
+v5.p[which(v5>1)]=1
+
+wilcox.test(v5.p,v3.p, alternative="two.sided")
+##lg pel. significantly lower diet representation than demersal, sm. pel.
+wilcox.test(v2.p,v3.p, alternative="two.sided")
+
+
+v1=dat.long.sub$score[dat.long.sub$EcoInt=='Predation']
+sp=dat.long.sub$Sptype[dat.long.sub$EcoInt=='Predation']
+v1.p=rep(0,length(v1))
+v1.p[which(v1>1)]=1
+kruskal.test(v1.p,sp)
+##data:  v1.p and sp
+#Kruskal-Wallis chi-squared = 24.857, df = 3, p-value = 1.654e-05
+
+v1=dat.long.sub$score[dat.long.sub$EcoInt=='Climate']
+sp=dat.long.sub$Sptype[dat.long.sub$EcoInt=='Climate']
+v1.p=rep(0,length(v1))
+v1.p[which(v1>1)]=1
+kruskal.test(v1.p,sp)
+#Kruskal-Wallis chi-squared = 8.1511, df = 3, p-value = 0.04299
+
+v1=dat.long.sub$score[dat.long.sub$EcoInt=='Habitat']
+sp=dat.long.sub$Sptype[dat.long.sub$EcoInt=='Habitat']
+v1.p=rep(0,length(v1))
+v1.p[which(v1>1)]=1
+kruskal.test(v1.p,sp)
+
+
+v2=dat.long.sub$score[dat.long.sub$OF0105=='sm. pel.'& dat.long.sub$EcoInt=='Bycatch Target']
+v2.p=rep(0,length(v2))
+v2.p[which(v2>1)]=1
+
+wilcox.test(v1,v2, alternative="less")
+wilcox.test(v1.p,v2.p, alternative="less")
+
+
+
+
+
 ###plot by revenue
 dat.long.sub=dat.long[dat.long$EcoInt %in% c("Habitat","Climate","Predation","Diet"),]
 dat.long.sub$EcoInt=factor(dat.long.sub$EcoInt, levels=c("Bycatch Target","Bycatch Other", "Habitat","Climate","Diet","Predation"))
