@@ -7,7 +7,7 @@ library(dplyr)
 library(tidyr)
 
 
-dat=read.csv("Data/RAMdatSept13.csv", header=T)
+dat=read.csv("Data/RAMDat19Mar18.csv", header=T)
 
 dat=dat[is.na(dat$Year)==F,]
 
@@ -110,8 +110,8 @@ v2=dat.long.sub$score[dat.long.sub$OF0105=='Overfished'& dat.long.sub$EcoInt=='B
 v2.p=rep(0,length(v2))
 v2.p[which(v2>1)]=1
 
-wilcox.test(v1,v2, alternative="less")
-wilcox.test(v1.p,v2.p, alternative="less")
+wilcox.test(as.numeric(v1),as.numeric(v2), alternative="less")
+wilcox.test(as.numeric(v1.p),as.numeric(v2.p), alternative="less")
 
 #Wilcoxon rank sum test with continuity correction
 #data:  v1 and v2
@@ -210,7 +210,16 @@ v1.p=rep(0,length(v1))
 v1.p[which(v1>1)]=1
 kruskal.test(v1.p,sp)
 
-
+types=levels(dat.long$Sptype)[-1]
+ecox=levels(dat.long$EcoInt)
+for(i in types){
+  for(j in ecox) {
+    v2=dat.long.sub$score[dat.long.sub$Sptype==i & dat.long.sub$EcoInt==j]
+    v2.p=rep(0,length(v2))
+    v2.p[which(v2>1)]=1
+    wilcox.test(v1.p,v2.p, alternative="less")
+  }
+}
 v2=dat.long.sub$score[dat.long.sub$OF0105=='sm. pel.'& dat.long.sub$EcoInt=='Bycatch Target']
 v2.p=rep(0,length(v2))
 v2.p[which(v2>1)]=1
