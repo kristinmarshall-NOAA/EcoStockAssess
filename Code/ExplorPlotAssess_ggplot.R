@@ -38,6 +38,7 @@ dat.long$EcoInt=factor(dat.long$EcoInt, levels=c("Bycatch Target","Bycatch Other
   
 
 dat.long.sub=dat.long
+dat.long.sub$score=as.numeric(dat.long.sub$score)
 dat.long.sub$EcoInt=factor(dat.long.sub$EcoInt, levels=c("Bycatch Target","Bycatch Other", "Habitat","Climate","Diet","Predation","Competition"))
 
 dat.all <- cbind(expand.grid(EcoInt=levels(dat.long.sub$EcoInt), score=levels(as.factor(dat.long.sub$score)), n.count=NA, per.count=NA))
@@ -210,14 +211,23 @@ v1.p=rep(0,length(v1))
 v1.p[which(v1>1)]=1
 kruskal.test(v1.p,sp)
 
-types=levels(dat.long$Sptype)[-1]
-ecox=levels(dat.long$EcoInt)
-for(i in types){
-  for(j in ecox) {
-    v2=dat.long.sub$score[dat.long.sub$Sptype==i & dat.long.sub$EcoInt==j]
+
+
+types=levels(dat.long.sub$Sptype)
+ecox=levels(dat.long.sub$EcoInt)
+for(i in 1:length(ecox)){
+  v1=dat.long.sub$score[dat.long.sub$Sptype==types[2] & dat.long.sub$EcoInt==ecox[i]]  
+  v1.p=rep(0,length(v1))
+  v1.p[which(v1>1)]=1
+  
+  for(j in 1:length(types)) {
+    v2=dat.long.sub$score[dat.long.sub$Sptype==types[j] & dat.long.sub$EcoInt==ecox[i]]
     v2.p=rep(0,length(v2))
     v2.p[which(v2>1)]=1
-    wilcox.test(v1.p,v2.p, alternative="less")
+    print(c(ecox[i],types[2],types[j]))
+    f=wilcox.test(v1.p,v2.p, alternative="two.sided")
+    print(f)
+    
   }
 }
 v2=dat.long.sub$score[dat.long.sub$OF0105=='sm. pel.'& dat.long.sub$EcoInt=='Bycatch Target']
