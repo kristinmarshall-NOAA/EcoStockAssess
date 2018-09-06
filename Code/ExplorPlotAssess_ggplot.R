@@ -2,6 +2,7 @@ library(MASS)
 require(likert)
 require(ggplot2)
 require(reshape)
+#devtools::install_github("seananderson/ggsidekick")
 library(ggsidekick)
 library(dplyr)
 library(tidyr)
@@ -56,15 +57,16 @@ dat.sub$Usage=factor(dat.sub$score, labels=c('Background','Qual.','Quant.'))
 
 
 ##Figure 1, a histogram of frequency of scores by category of ecol. info
+pdf('Figure1.pdf', width=170*0.0394)
 ggplot(dat.sub, aes(x=factor(EcoInt), y=per.count, fill=Usage, color=Usage), cex=2) +
   geom_bar(width=.7, position="dodge", stat="identity") +
-  scale_fill_brewer(palette='Greys')+
+  scale_fill_brewer(palette='Blues')+
   scale_color_manual(values=rep('black',3))+
   #theme(legend.title=element_blank(), text=element_text(size=18),panel.background = element_rect(fill = 'grey55'),
   #      panel.grid.major = element_line(colour = "grey65"),
   #      panel.grid.minor = element_line(colour = "grey65")) +
     labs(x="", y="Proportion") +theme_sleek()
-  
+dev.off()  
 
 
 ##Diet Lab
