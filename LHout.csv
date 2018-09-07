@@ -1,0 +1,25 @@
+Ecosystem Interaction,Life History Type A,Life History Type B,Wilcoxon W,p-value,alpha,,
+Climate,demersal,invert,744,0.0840,0.008333333,0,0.0840
+Climate,demersal,lg. pel.,3999,0.0860,0.008333333,0,0.0860
+Climate,demersal,sm. pel.,443,0.4550,0.008333333,0,0.4550
+Climate,invert,lg. pel.,567,0.006*,0.008333333,0,#VALUE!
+Climate,invert,sm. pel.,65.5,0.7070,0.008333333,0,0.7070
+Climate,lg. pel.,sm. pel.,174.5,0.1030,0.008333333,0,0.1030
+Diet,demersal,invert,1054.5,0.2630,0.008333333,0,0.2630
+Diet,demersal,lg. pel.,4246.5,0.001*,0.008333333,0,#VALUE!
+Diet,demersal,sm. pel.,533,0.6870,0.008333333,0,0.6870
+Diet,invert,lg. pel.,456,0.0550,0.008333333,0,0.0550
+Diet,invert,sm. pel.,56.5,0.6920,0.008333333,0,0.6920
+Diet,lg. pel.,sm. pel.,199.5,0.0090,0.008333333,0,0.0090
+Habitat,demersal,invert,865.5,0.4380,0.008333333,0,0.4380
+Habitat,demersal,lg. pel.,4246.5,0.001*,0.008333333,0,#VALUE!
+Habitat,demersal,sm. pel.,470,0.6410,0.008333333,0,0.6410
+Habitat,invert,lg. pel.,541.5,<0.001*,0.008333333,0,#VALUE!
+Habitat,invert,sm. pel.,61,0.9660,0.008333333,0,0.9660
+Habitat,lg. pel.,sm. pel.,171,<0.001*,0.008333333,0,#VALUE!
+Predation,demersal,invert,883.5,0.5000,0.008333333,0,0.5000
+Predation,demersal,lg. pel.,4012.5,0.0140,0.008333333,0,0.0140
+Predation,demersal,sm. pel.,257,<0.001*,0.008333333,0,#VALUE!
+Predation,invert,lg. pel.,505.5,0.007*,0.008333333,0,#VALUE!
+Predation,invert,sm. pel.,34.5,0.0510,0.008333333,0,0.0510
+Predation,lg. pel.,sm. pel.,89.5,<0.001*,0.008333333,0,#VALUE!

@@ -16,6 +16,7 @@ dat=dat[is.na(dat$Year)==F,]
 
 
 datr=dat[,c(8:14)]
+#datr$Diet=as.numeric(datr$Diet)
 datr=round(datr)
 dat[,c(8:14)]=datr
 
@@ -57,29 +58,36 @@ dat.sub$Usage=factor(dat.sub$score, labels=c('Background','Qual.','Quant.'))
 
 
 ##Figure 1, a histogram of frequency of scores by category of ecol. info
-pdf('Figure1.pdf', width=170*0.0394)
+
+
+info.type.labels=c("Bycatch\nTarget","Bycatch\nOther", "Habitat","Climate","Diet","Predation","Competition")
 ggplot(dat.sub, aes(x=factor(EcoInt), y=per.count, fill=Usage, color=Usage), cex=2) +
   geom_bar(width=.7, position="dodge", stat="identity") +
   scale_fill_brewer(palette='Blues')+
   scale_color_manual(values=rep('black',3))+
+  scale_x_discrete(labels=info.type.labels) +
   #theme(legend.title=element_blank(), text=element_text(size=18),panel.background = element_rect(fill = 'grey55'),
   #      panel.grid.major = element_line(colour = "grey65"),
   #      panel.grid.minor = element_line(colour = "grey65")) +
-    labs(x="", y="Proportion") +theme_sleek()
-dev.off()  
+    labs(x="", y="Proportion") +theme_sleek() #+
+  #theme(axis.text=element_text(size=7))
+ggsave('Figure1.pdf', device='pdf', width=170, height=170/2, units="mm", dpi=1200) 
 
 
 ##Diet Lab
 dat.long.sub=dat.long[(dat.long$EcoInt=="Predation" | dat.long$EcoInt=="Diet"),]
 dat.long.sub$DietLab=factor(dat.long.sub$DietLab,labels=c('No diet lab','Diet lab'))
 
+#ax.labs=c('No diet/nlab','Diet/nlab'))
 dat.long.sub$Usage=factor(dat.long.sub$score, labels=c('None','Background','Qual.','Quant.'))
 ggplot(dat.long.sub, aes(DietLab, fill=Usage)) +
   geom_bar(position='fill') +
-  scale_fill_brewer(palette='Greys') +
+  scale_fill_brewer(palette='Blues') +
   labs(x="", y="Proportion") +
   facet_wrap(~EcoInt, ncol=2) +
-  theme_sleek()
+  theme_sleek()#+
+  #theme(legend.position=c(2,1))
+ggsave('Figure3Diets.pdf', device='pdf', width=170, height=85, units="mm", dpi=1200)
 
 summ.dat<- dat.long.sub %>%
   group_by(EcoInt,DietLab) %>%
@@ -130,26 +138,38 @@ wilcox.test(as.numeric(v1.p),as.numeric(v2.p), alternative="less")
 
 ggplot(dat.long.sub, aes(OF0105, fill=Usage)) +
   geom_bar(position='fill') +
-  scale_fill_brewer(palette='Greys') +
+  scale_fill_brewer(palette='Blues') +
   labs(x="", y="Proportion") +
   facet_wrap(~EcoInt, ncol=2) +
   theme_sleek()
-
+ggsave('Figure2Overfishing.pdf', device='pdf', width=170, height=170, units="mm", dpi=1200)
 
 
 ##Life History types
 
 dat.long.sub=dat.long[dat.long$EcoInt!="Competition",]
+dat.long.sub$Usage=factor(dat.long.sub$score, labels=c('None','Background','Qual.','Quant.'))
 dat.long.sub$Sptype=factor(dat.long.sub$Sptype, labels=c('sm. pel.', 'demersal', 'invert', 'lg. pel.'))
+x.tick.labels=c("small\npelagic", "demersal", "invert.", "large\npelagic")
 ggplot(dat.long.sub, aes(factor(Sptype), fill=Usage)) +
   geom_bar(position='fill') +
-  scale_fill_brewer(palette='Greys') +
-  labs(x="", y="Proportion") +
   facet_wrap(~EcoInt, ncol=2) +
+  scale_fill_brewer(palette='Blues') +
+  scale_x_discrete(labels=x.tick.labels) +
+  labs(x="", y="Proportion") +
   theme_sleek()
+ggsave('Figure4LifeHistory.pdf', device='pdf', width=170, height=170, units="mm", dpi=1200)
+
   
-pel.dat= dat.long.sub %>%
-  filter(Sptype=='pelagic')
+#pel.dat= dat.long.sub %>%
+ # filter(Sptype=='pelagic')
+
+v1=dat.long.sub$score[dat.long.sub$EcoInt=='Bycatch Target']
+sp=dat.long.sub$Sptype[dat.long.sub$EcoInt=='Bycatch Target']
+v1.p=rep(0,length(v1))
+v1.p[which(v1>1)]=1
+kruskal.test(v1.p,sp)
+#Kruskal-Wallis chi-squared = 5.3239, df = 3, p-value = 0.1496
   
 v1=dat.long.sub$score[dat.long.sub$EcoInt=='Bycatch Other']
 sp=dat.long.sub$Sptype[dat.long.sub$EcoInt=='Bycatch Other']
@@ -170,26 +190,7 @@ kruskal.test(v1.p,sp)
 #data:  v1.p and sp
 #Kruskal-Wallis chi-squared = 12.656, df = 3, p-value = 0.005443
 
-#pairwise comparisons
-v2=dat.long.sub$score[dat.long.sub$EcoInt=='Diet' & dat.long.sub$Sptype=="sm. pel."]
-v2.p=rep(0,length(v2))
-v2.p[which(v2>1)]=1
 
-v3=dat.long.sub$score[dat.long.sub$EcoInt=='Diet' & dat.long.sub$Sptype=="lg. pel."]
-v3.p=rep(0,length(v3))
-v3.p[which(v3>1)]=1
-
-v4=dat.long.sub$score[dat.long.sub$EcoInt=='Diet' & dat.long.sub$Sptype=="demersal"]
-v4.p=rep(0,length(v4))
-v4.p[which(v4>1)]=1
-
-v5=dat.long.sub$score[dat.long.sub$EcoInt=='Diet' & dat.long.sub$Sptype=="invert"]
-v5.p=rep(0,length(v5))
-v5.p[which(v5>1)]=1
-
-wilcox.test(v5.p,v3.p, alternative="two.sided")
-##lg pel. significantly lower diet representation than demersal, sm. pel.
-wilcox.test(v2.p,v3.p, alternative="two.sided")
 
 
 v1=dat.long.sub$score[dat.long.sub$EcoInt=='Predation']
@@ -212,13 +213,15 @@ sp=dat.long.sub$Sptype[dat.long.sub$EcoInt=='Habitat']
 v1.p=rep(0,length(v1))
 v1.p[which(v1>1)]=1
 kruskal.test(v1.p,sp)
-
+#Kruskal-Wallis chi-squared = 13.843, df = 3, p-value = 0.003127
 
 
 types=levels(dat.long.sub$Sptype)
 ecox=levels(dat.long.sub$EcoInt)
+stat.out=cbind(NA, NA, NA, NA, NA)
+this.type=types[4]
 for(i in 1:length(ecox)){
-  v1=dat.long.sub$score[dat.long.sub$Sptype==types[2] & dat.long.sub$EcoInt==ecox[i]]  
+  v1=dat.long.sub$score[dat.long.sub$Sptype==this.type & dat.long.sub$EcoInt==ecox[i]]  
   v1.p=rep(0,length(v1))
   v1.p[which(v1>1)]=1
   
@@ -226,9 +229,11 @@ for(i in 1:length(ecox)){
     v2=dat.long.sub$score[dat.long.sub$Sptype==types[j] & dat.long.sub$EcoInt==ecox[i]]
     v2.p=rep(0,length(v2))
     v2.p[which(v2>1)]=1
-    print(c(ecox[i],types[2],types[j]))
+    #print(c(ecox[i],types[2],types[j]))
     f=wilcox.test(v1.p,v2.p, alternative="two.sided")
-    print(f)
+    stat.this=cbind(ecox[i],this.type,types[j], f$statistic, f$p.value)
+    stat.out=rbind(stat.this,stat.out)
+    #print(f)
     
   }
 }
@@ -239,7 +244,28 @@ v2.p[which(v2>1)]=1
 wilcox.test(v1,v2, alternative="less")
 wilcox.test(v1.p,v2.p, alternative="less")
 
+##################################
+##everything below this is really really old
+#pairwise comparisons
+v2=dat.long.sub$score[dat.long.sub$EcoInt=='Diet' & dat.long.sub$Sptype=="sm. pel."]
+v2.p=rep(0,length(v2))
+v2.p[which(v2>1)]=1
 
+v3=dat.long.sub$score[dat.long.sub$EcoInt=='Diet' & dat.long.sub$Sptype=="lg. pel."]
+v3.p=rep(0,length(v3))
+v3.p[which(v3>1)]=1
+
+v4=dat.long.sub$score[dat.long.sub$EcoInt=='Diet' & dat.long.sub$Sptype=="demersal"]
+v4.p=rep(0,length(v4))
+v4.p[which(v4>1)]=1
+
+v5=dat.long.sub$score[dat.long.sub$EcoInt=='Diet' & dat.long.sub$Sptype=="invert"]
+v5.p=rep(0,length(v5))
+v5.p[which(v5>1)]=1
+
+wilcox.test(v5.p,v3.p, alternative="two.sided")
+##lg pel. significantly lower diet representation than demersal, sm. pel.
+wilcox.test(v2.p,v3.p, alternative="two.sided")
 
 
 
