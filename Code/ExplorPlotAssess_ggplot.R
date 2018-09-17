@@ -4,6 +4,7 @@ require(ggplot2)
 require(reshape)
 #devtools::install_github("seananderson/ggsidekick")
 library(ggsidekick)
+library(ggpubr)
 library(dplyr)
 library(tidyr)
 
@@ -59,11 +60,12 @@ dat.sub$Usage=factor(dat.sub$score, labels=c('Background','Qual.','Quant.'))
 
 ##Figure 1, a histogram of frequency of scores by category of ecol. info
 
-
+cols=c('#bdd7e7', '#6baed6', '#2171b5')
 info.type.labels=c("Bycatch\nTarget","Bycatch\nOther", "Habitat","Climate","Diet","Predation","Competition")
 ggplot(dat.sub, aes(x=factor(EcoInt), y=per.count, fill=Usage, color=Usage), cex=2) +
   geom_bar(width=.7, position="dodge", stat="identity") +
-  scale_fill_brewer(palette='Blues')+
+  #scale_fill_brewer(palette='Blues')+
+  scale_fill_manual(values=cols) +
   scale_color_manual(values=rep('black',3))+
   scale_x_discrete(labels=info.type.labels) +
   #theme(legend.title=element_blank(), text=element_text(size=18),panel.background = element_rect(fill = 'grey55'),
@@ -75,18 +77,42 @@ ggsave('Figure1.pdf', device='pdf', width=170, height=170/2, units="mm", dpi=120
 
 
 ##Diet Lab
+#tag.label=c('A','B')
 dat.long.sub=dat.long[(dat.long$EcoInt=="Predation" | dat.long$EcoInt=="Diet"),]
 dat.long.sub$DietLab=factor(dat.long.sub$DietLab,labels=c('No diet lab','Diet lab'))
 
 #ax.labs=c('No diet/nlab','Diet/nlab'))
 dat.long.sub$Usage=factor(dat.long.sub$score, labels=c('None','Background','Qual.','Quant.'))
-ggplot(dat.long.sub, aes(DietLab, fill=Usage)) +
+
+dat.long.sub.A=dat.long.sub[dat.long.sub$EcoInt=="Diet",]
+dat.long.sub.B=dat.long.sub[dat.long.sub$EcoInt=="Predation",]
+diet.plot.A=ggplot(dat.long.sub.A, aes(DietLab, fill=Usage)) +
   geom_bar(position='fill') +
   scale_fill_brewer(palette='Blues') +
+  guides(fill=F)+
   labs(x="", y="Proportion") +
-  facet_wrap(~EcoInt, ncol=2) +
-  theme_sleek()#+
-  #theme(legend.position=c(2,1))
+  ggtitle("Diet")+
+  theme(axis.text.x = element_text(size=10), 
+        plot.margin=unit(c(1,0,0,1.5), "pt"),
+        axis.text.y=element_text(size=10))+
+  border(color="grey30", size=0.8, linetype=1)+
+  font("ylab", size=12, face="plain") +
+  font("title", size=12, face="plain")
+
+diet.plot.B=ggplot(dat.long.sub.B, aes(DietLab, fill=Usage)) +
+  geom_bar(position='fill') +
+  scale_fill_brewer(palette='Blues') +
+  labs(x="", y="") +
+  ggtitle("Predation") +
+  theme(axis.text.x = element_text(size=10), 
+        plot.margin=unit(c(1,20,0,0), "pt"),
+        axis.text.y=element_text(size=10))+
+  border(color="grey30", size=0.8, linetype=1)+
+  font("ylab", size=12, face="plain") +
+  font("title", size=12, face="plain")
+
+ggarrange(diet.plot.A, diet.plot.B, labels=c('A','B'), common.legend=TRUE,legend="right")
+
 ggsave('Figure3Diets.pdf', device='pdf', width=170, height=85, units="mm", dpi=1200)
 
 summ.dat<- dat.long.sub %>%
@@ -135,13 +161,87 @@ wilcox.test(as.numeric(v1.p),as.numeric(v2.p), alternative="less")
 #W = 2199, p-value = 3.024e-05
 #alternative hypothesis: true location shift is less than 0
 
+x.tick.labels=c("Not overfished", "Overfished")
+dat.long.sub.A=dat.long[dat.long$EcoInt=="Bycatch Target",]
+dat.long.sub.B=dat.long[dat.long$EcoInt=="Bycatch Other",]
+dat.long.sub.C=dat.long[dat.long$EcoInt=="Habitat",]
+dat.long.sub.D=dat.long[dat.long$EcoInt=="Climate",]
+dat.long.sub.E=dat.long[dat.long$EcoInt=="Diet",]
+dat.long.sub.F=dat.long[dat.long$EcoInt=="Predation",]  
 
-ggplot(dat.long.sub, aes(OF0105, fill=Usage)) +
+p.A=ggplot(dat.long.sub, aes(OF0105, fill=Usage)) +
+    geom_bar(position='fill') +
+    scale_fill_brewer(palette='Blues') +
+    labs(x="", y="Proportion") +
+    ggtitle("Bycatch Target") +
+    theme(axis.text.x = element_blank(), 
+          plot.margin=unit(c(1,0,0,1.5), "pt"),
+          axis.text.y=element_text(size=10))+
+    border(color="grey30", size=0.8, linetype=1)+
+   font("ylab", size=12, face="plain") +
+    font("title", size=12, face="plain")
+
+p.B=ggplot(dat.long.sub, aes(OF0105, fill=Usage)) +
+  geom_bar(position='fill') +
+  scale_fill_brewer(palette='Blues') +
+  theme(axis.text.x = element_blank(),
+        axis.text.y = element_blank(), plot.margin=unit(c(1,20,0,0), "pt"))+
+  labs(x="", y="") +
+  ggtitle("Bycatch Other") +
+  border(color="grey30", size=0.8, linetype=1)+
+  font("title", size=12, face="plain")
+
+p.C=ggplot(dat.long.sub, aes(OF0105, fill=Usage)) +
   geom_bar(position='fill') +
   scale_fill_brewer(palette='Blues') +
   labs(x="", y="Proportion") +
-  facet_wrap(~EcoInt, ncol=2) +
-  theme_sleek()
+  ggtitle("Habitat") +
+  theme(axis.text.x = element_blank(), 
+        plot.margin=unit(c(1,0,0,0.5), "pt"),
+        axis.text.y=element_text(size=10))+
+  border(color="grey30", size=0.8, linetype=1)+
+  font("ylab", size=12, face="plain") +
+  font("title", size=12, face="plain")
+
+p.D=ggplot(dat.long.sub, aes(OF0105, fill=Usage)) +
+  geom_bar(position='fill') +
+  scale_fill_brewer(palette='Blues') +
+  theme(axis.text.x = element_blank(),
+        axis.text.y = element_blank(), plot.margin=unit(c(1,20,0,0), "pt"))+
+  labs(x="", y="") +
+  ggtitle("Climate") +
+  border(color="grey30", size=0.8, linetype=1)+
+  font("title", size=12, face="plain")
+  
+
+p.E=ggplot(dat.long.sub, aes(OF0105, fill=Usage)) +
+  geom_bar(position='fill') +
+  scale_fill_brewer(palette='Blues') +
+  labs(x="", y="Proportion") +
+  ggtitle("Diet") +
+  border(color="grey30", size=0.8, linetype=1)+
+  theme(plot.margin=unit(c(1,0,0,0.5), "pt"),
+        axis.text.x=element_text(size=10),
+        axis.text.y=element_text(size=10))+
+  font("title", size=12, face="plain")+
+  font("ylab", size=12, face="plain") +
+  scale_x_discrete(labels=x.tick.labels)
+
+p.F=ggplot(dat.long.sub, aes(OF0105, fill=Usage)) +
+  geom_bar(position='fill') +
+  scale_fill_brewer(palette='Blues') +
+  labs(x="", y="") +
+  ggtitle("Predation") +
+  theme(axis.text.y = element_blank(), 
+        plot.margin=unit(c(1,20,0,0), "pt"),
+        axis.text.x=element_text(size=10))+
+  border(color="grey30", size=0.8, linetype=1)+
+  font("title", size=12, face="plain")+
+  font("ylab", size=12, face="plain") +
+  scale_x_discrete(labels=x.tick.labels)
+  
+
+ggarrange(p.A, p.B, p.C, p.D, p.E, p.F, ncol=2, nrow=3, labels=c('A','B','C','D','E','F'), common.legend=TRUE,legend="right")
 ggsave('Figure2Overfishing.pdf', device='pdf', width=170, height=170, units="mm", dpi=1200)
 
 
@@ -151,13 +251,98 @@ dat.long.sub=dat.long[dat.long$EcoInt!="Competition",]
 dat.long.sub$Usage=factor(dat.long.sub$score, labels=c('None','Background','Qual.','Quant.'))
 dat.long.sub$Sptype=factor(dat.long.sub$Sptype, labels=c('sm. pel.', 'demersal', 'invert', 'lg. pel.'))
 x.tick.labels=c("small\npelagic", "demersal", "invert.", "large\npelagic")
-ggplot(dat.long.sub, aes(factor(Sptype), fill=Usage)) +
+# ggplot(dat.long.sub, aes(factor(Sptype), fill=Usage)) +
+#   geom_bar(position='fill') +
+#   facet_wrap(~EcoInt, ncol=2) +
+#   scale_fill_brewer(palette='Blues') +
+#   scale_x_discrete(labels=x.tick.labels) +
+#   labs(x="", y="Proportion") +
+#   theme_sleek()
+
+dat.long.sub.A=dat.long[dat.long$EcoInt=="Bycatch Target",]
+dat.long.sub.B=dat.long[dat.long$EcoInt=="Bycatch Other",]
+dat.long.sub.C=dat.long[dat.long$EcoInt=="Habitat",]
+dat.long.sub.D=dat.long[dat.long$EcoInt=="Climate",]
+dat.long.sub.E=dat.long[dat.long$EcoInt=="Diet",]
+dat.long.sub.F=dat.long[dat.long$EcoInt=="Predation",]  
+
+p.A=ggplot(dat.long.sub, aes(Sptype, fill=Usage)) +
   geom_bar(position='fill') +
-  facet_wrap(~EcoInt, ncol=2) +
   scale_fill_brewer(palette='Blues') +
-  scale_x_discrete(labels=x.tick.labels) +
   labs(x="", y="Proportion") +
-  theme_sleek()
+  ggtitle("Bycatch Target") +
+  theme(axis.text.x = element_blank(), 
+        plot.margin=unit(c(1,0,0,1.5), "pt"),
+        axis.text.y=element_text(size=10))+
+  border(color="grey30", size=0.8, linetype=1)+
+  font("ylab", size=12, face="plain") +
+  font("title", size=12, face="plain")
+
+p.B=ggplot(dat.long.sub, aes(Sptype, fill=Usage)) +
+  geom_bar(position='fill') +
+  scale_fill_brewer(palette='Blues') +
+  theme(axis.text.x = element_blank(),
+        axis.text.y = element_blank(), plot.margin=unit(c(1,20,0,0), "pt"))+
+  labs(x="", y="") +
+  ggtitle("Bycatch Other") +
+  border(color="grey30", size=0.8, linetype=1)+
+  font("title", size=12, face="plain")
+
+p.C=ggplot(dat.long.sub, aes(Sptype, fill=Usage)) +
+  geom_bar(position='fill') +
+  scale_fill_brewer(palette='Blues') +
+  labs(x="", y="Proportion") +
+  ggtitle("Habitat") +
+  theme(axis.text.x = element_blank(), 
+        plot.margin=unit(c(1,0,0,0.5), "pt"),
+        axis.text.y=element_text(size=10))+
+  border(color="grey30", size=0.8, linetype=1)+
+  font("ylab", size=12, face="plain") +
+  font("title", size=12, face="plain")
+
+p.D=ggplot(dat.long.sub, aes(Sptype, fill=Usage)) +
+  geom_bar(position='fill') +
+  scale_fill_brewer(palette='Blues') +
+  theme(axis.text.x = element_blank(),
+        axis.text.y = element_blank(), plot.margin=unit(c(1,20,0,0), "pt"))+
+  labs(x="", y="") +
+  ggtitle("Climate") +
+  border(color="grey30", size=0.8, linetype=1)+
+  font("title", size=12, face="plain")
+
+
+p.E=ggplot(dat.long.sub, aes(Sptype, fill=Usage)) +
+  geom_bar(position='fill') +
+  scale_fill_brewer(palette='Blues') +
+  labs(x="", y="Proportion") +
+  ggtitle("Diet") +
+  border(color="grey30", size=0.8, linetype=1)+
+  theme(plot.margin=unit(c(1,0,0,0.5), "pt"),
+        axis.text.x=element_text(size=10),
+        axis.text.y=element_text(size=10))+
+  font("title", size=12, face="plain")+
+  font("ylab", size=12, face="plain") +
+  scale_x_discrete(labels=x.tick.labels)
+
+p.F=ggplot(dat.long.sub, aes(Sptype, fill=Usage)) +
+  geom_bar(position='fill') +
+  scale_fill_brewer(palette='Blues') +
+  labs(x="", y="") +
+  ggtitle("Predation") +
+  theme(axis.text.y = element_blank(), 
+        plot.margin=unit(c(1,20,0,0), "pt"),
+        axis.text.x=element_text(size=10))+
+  border(color="grey30", size=0.8, linetype=1)+
+  font("title", size=12, face="plain")+
+  font("ylab", size=12, face="plain") +
+  scale_x_discrete(labels=x.tick.labels)
+
+
+ggarrange(p.A, p.B, p.C, p.D, p.E, p.F, ncol=2, nrow=3, labels=c('A','B','C','D','E','F'), common.legend=TRUE,legend="right")
+
+
+
+
 ggsave('Figure4LifeHistory.pdf', device='pdf', width=170, height=170, units="mm", dpi=1200)
 
   
