@@ -4,7 +4,9 @@ require(ggplot2)
 require(reshape)
 #devtools::install_github("seananderson/ggsidekick")
 library(ggsidekick)
-library(ggpubr)
+library(tidyverse)
+devtools::install_github("kassambara/ggpubr")
+1library(ggpubr)
 library(dplyr)
 library(tidyr)
 
@@ -86,6 +88,7 @@ dat.long.sub$Usage=factor(dat.long.sub$score, labels=c('None','Background','Qual
 
 dat.long.sub.A=dat.long.sub[dat.long.sub$EcoInt=="Diet",]
 dat.long.sub.B=dat.long.sub[dat.long.sub$EcoInt=="Predation",]
+
 diet.plot.A=ggplot(dat.long.sub.A, aes(DietLab, fill=Usage)) +
   geom_bar(position='fill') +
   scale_fill_brewer(palette='Blues') +
@@ -94,10 +97,10 @@ diet.plot.A=ggplot(dat.long.sub.A, aes(DietLab, fill=Usage)) +
   ggtitle("Diet")+
   theme(axis.text.x = element_text(size=10), 
         plot.margin=unit(c(1,0,0,1.5), "pt"),
-        axis.text.y=element_text(size=10))+
-  border(color="grey30", size=0.8, linetype=1)+
-  font("ylab", size=12, face="plain") +
-  font("title", size=12, face="plain")
+        axis.text.y=element_text(size=10))
+  #border(color="grey30", size=0.8, linetype=1)+
+  #font("ylab", size=12, face="plain") +
+  #font("title", size=12, face="plain")
 
 diet.plot.B=ggplot(dat.long.sub.B, aes(DietLab, fill=Usage)) +
   geom_bar(position='fill') +
@@ -106,10 +109,10 @@ diet.plot.B=ggplot(dat.long.sub.B, aes(DietLab, fill=Usage)) +
   ggtitle("Predation") +
   theme(axis.text.x = element_text(size=10), 
         plot.margin=unit(c(1,20,0,0), "pt"),
-        axis.text.y=element_text(size=10))+
-  border(color="grey30", size=0.8, linetype=1)+
-  font("ylab", size=12, face="plain") +
-  font("title", size=12, face="plain")
+        axis.text.y=element_text(size=10)) #+
+ # border(color="grey30", size=0.8, linetype=1)+
+ # font("ylab", size=12, face="plain") +
+  #font("title", size=12, face="plain")
 
 ggarrange(diet.plot.A, diet.plot.B, labels=c('A','B'), common.legend=TRUE,legend="right")
 
@@ -162,72 +165,83 @@ wilcox.test(as.numeric(v1.p),as.numeric(v2.p), alternative="less")
 #alternative hypothesis: true location shift is less than 0
 
 x.tick.labels=c("Not overfished", "Overfished")
-dat.long.sub.A=dat.long[dat.long$EcoInt=="Bycatch Target",]
-dat.long.sub.B=dat.long[dat.long$EcoInt=="Bycatch Other",]
-dat.long.sub.C=dat.long[dat.long$EcoInt=="Habitat",]
-dat.long.sub.D=dat.long[dat.long$EcoInt=="Climate",]
-dat.long.sub.E=dat.long[dat.long$EcoInt=="Diet",]
-dat.long.sub.F=dat.long[dat.long$EcoInt=="Predation",]  
+dat.long.sub.A=dat.long.sub[dat.long.sub$EcoInt=="Bycatch Target",]
+dat.long.sub.B=dat.long.sub[dat.long.sub$EcoInt=="Bycatch Other",]
+dat.long.sub.C=dat.long.sub[dat.long.sub$EcoInt=="Habitat",]
+dat.long.sub.D=dat.long.sub[dat.long.sub$EcoInt=="Climate",]
+dat.long.sub.E=dat.long.sub[dat.long.sub$EcoInt=="Diet",]
+dat.long.sub.F=dat.long.sub[dat.long.sub$EcoInt=="Predation",]  
 
-p.A=ggplot(dat.long.sub, aes(OF0105, fill=Usage)) +
+p.all=ggplot(dat.long.sub, aes(OF0105, fill=Usage)) +
+  geom_bar(position='fill') +
+  facet_wrap(~EcoInt) +
+  scale_fill_brewer(palette='Blues') +
+  labs(x="", y="Proportion") +
+  #ggtitle("Bycatch Target") +
+  theme(axis.text.x = element_blank(), 
+        plot.margin=unit(c(1,0,0,1.5), "pt"),
+        axis.text.y=element_text(size=10))  
+
+
+p.A=ggplot(dat.long.sub.A, aes(OF0105, fill=Usage)) +
     geom_bar(position='fill') +
     scale_fill_brewer(palette='Blues') +
     labs(x="", y="Proportion") +
     ggtitle("Bycatch Target") +
     theme(axis.text.x = element_blank(), 
           plot.margin=unit(c(1,0,0,1.5), "pt"),
-          axis.text.y=element_text(size=10))+
-    border(color="grey30", size=0.8, linetype=1)+
-   font("ylab", size=12, face="plain") +
-    font("title", size=12, face="plain")
+          axis.text.y=element_text(size=10)) #+
+    #border(color="grey30", size=0.8, linetype=1)+
+   #font("ylab", size=12, face="plain") +
+    #font("title", size=12, face="plain")
 
-p.B=ggplot(dat.long.sub, aes(OF0105, fill=Usage)) +
+p.B=ggplot(dat.long.sub.B, aes(OF0105, fill=Usage)) +
   geom_bar(position='fill') +
   scale_fill_brewer(palette='Blues') +
   theme(axis.text.x = element_blank(),
         axis.text.y = element_blank(), plot.margin=unit(c(1,20,0,0), "pt"))+
   labs(x="", y="") +
-  ggtitle("Bycatch Other") +
-  border(color="grey30", size=0.8, linetype=1)+
-  font("title", size=12, face="plain")
+  ggtitle("Bycatch Other") #+
+  #border(color="grey30", size=0.8, linetype=1)+
+  #font("title", size=12, face="plain")
 
-p.C=ggplot(dat.long.sub, aes(OF0105, fill=Usage)) +
+p.C=ggplot(dat.long.sub.C, aes(OF0105, fill=Usage)) +
   geom_bar(position='fill') +
   scale_fill_brewer(palette='Blues') +
   labs(x="", y="Proportion") +
   ggtitle("Habitat") +
   theme(axis.text.x = element_blank(), 
         plot.margin=unit(c(1,0,0,0.5), "pt"),
-        axis.text.y=element_text(size=10))+
-  border(color="grey30", size=0.8, linetype=1)+
-  font("ylab", size=12, face="plain") +
-  font("title", size=12, face="plain")
+        axis.text.y=element_text(size=10)) #+
+  #border(color="grey30", size=0.8, linetype=1)+
+  #font("ylab", size=12, face="plain") +
+  #font("title", size=12, face="plain")
 
-p.D=ggplot(dat.long.sub, aes(OF0105, fill=Usage)) +
+p.D=ggplot(dat.long.sub.D, aes(OF0105, fill=Usage)) +
   geom_bar(position='fill') +
   scale_fill_brewer(palette='Blues') +
   theme(axis.text.x = element_blank(),
         axis.text.y = element_blank(), plot.margin=unit(c(1,20,0,0), "pt"))+
   labs(x="", y="") +
-  ggtitle("Climate") +
-  border(color="grey30", size=0.8, linetype=1)+
-  font("title", size=12, face="plain")
+  ggtitle("Climate") #+
+  #border(color="grey30", size=0.8, linetype=1)+
+  #font("title", size=12, face="plain")
   
 
-p.E=ggplot(dat.long.sub, aes(OF0105, fill=Usage)) +
+p.E=ggplot(dat.long.sub.E, aes(OF0105, fill=Usage)) +
   geom_bar(position='fill') +
   scale_fill_brewer(palette='Blues') +
   labs(x="", y="Proportion") +
   ggtitle("Diet") +
-  border(color="grey30", size=0.8, linetype=1)+
+  #border(color="grey30", size=0.8, linetype=1)+
   theme(plot.margin=unit(c(1,0,0,0.5), "pt"),
         axis.text.x=element_text(size=10),
         axis.text.y=element_text(size=10))+
-  font("title", size=12, face="plain")+
-  font("ylab", size=12, face="plain") +
+  #font("title", size=12, face="plain")+
+  #font("ylab", size=12, face="plain") +
   scale_x_discrete(labels=x.tick.labels)
 
-p.F=ggplot(dat.long.sub, aes(OF0105, fill=Usage)) +
+p.F=ggplot(dat.long.sub.F, aes(OF0105, fill=Usage)) +
   geom_bar(position='fill') +
   scale_fill_brewer(palette='Blues') +
   labs(x="", y="") +
@@ -235,9 +249,9 @@ p.F=ggplot(dat.long.sub, aes(OF0105, fill=Usage)) +
   theme(axis.text.y = element_blank(), 
         plot.margin=unit(c(1,20,0,0), "pt"),
         axis.text.x=element_text(size=10))+
-  border(color="grey30", size=0.8, linetype=1)+
-  font("title", size=12, face="plain")+
-  font("ylab", size=12, face="plain") +
+  #border(color="grey30", size=0.8, linetype=1)+
+  #font("title", size=12, face="plain")+
+  #font("ylab", size=12, face="plain") +
   scale_x_discrete(labels=x.tick.labels)
   
 
@@ -259,34 +273,45 @@ x.tick.labels=c("small\npelagic", "demersal", "invert.", "large\npelagic")
 #   labs(x="", y="Proportion") +
 #   theme_sleek()
 
-dat.long.sub.A=dat.long[dat.long$EcoInt=="Bycatch Target",]
-dat.long.sub.B=dat.long[dat.long$EcoInt=="Bycatch Other",]
-dat.long.sub.C=dat.long[dat.long$EcoInt=="Habitat",]
-dat.long.sub.D=dat.long[dat.long$EcoInt=="Climate",]
-dat.long.sub.E=dat.long[dat.long$EcoInt=="Diet",]
-dat.long.sub.F=dat.long[dat.long$EcoInt=="Predation",]  
+dat.long.sub.A=dat.long.sub[dat.long.sub$EcoInt=="Bycatch Target",]
+dat.long.sub.B=dat.long.sub[dat.long.sub$EcoInt=="Bycatch Other",]
+dat.long.sub.C=dat.long.sub[dat.long.sub$EcoInt=="Habitat",]
+dat.long.sub.D=dat.long.sub[dat.long.sub$EcoInt=="Climate",]
+dat.long.sub.E=dat.long.sub[dat.long.sub$EcoInt=="Diet",]
+dat.long.sub.F=dat.long.sub[dat.long.sub$EcoInt=="Predation",]  
 
-p.A=ggplot(dat.long.sub, aes(Sptype, fill=Usage)) +
+
+p.all=ggplot(dat.long.sub, aes(Sptype, fill=Usage)) +
+  geom_bar(position='fill') +
+  scale_fill_brewer(palette='Blues') +
+  labs(x="", y="Proportion") +
+  #ggtitle("Bycatch Target") +
+  facet_wrap(~EcoInt) +
+  theme(axis.text.x=element_text(size=10), 
+        plot.margin=unit(c(1,0,0,1.5), "pt"),
+        axis.text.y=element_text(size=10)) #+
+
+pp.A=ggplot(dat.long.sub.A, aes(Sptype, fill=Usage)) +
   geom_bar(position='fill') +
   scale_fill_brewer(palette='Blues') +
   labs(x="", y="Proportion") +
   ggtitle("Bycatch Target") +
   theme(axis.text.x = element_blank(), 
         plot.margin=unit(c(1,0,0,1.5), "pt"),
-        axis.text.y=element_text(size=10))+
-  border(color="grey30", size=0.8, linetype=1)+
-  font("ylab", size=12, face="plain") +
-  font("title", size=12, face="plain")
+        axis.text.y=element_text(size=10)) #+
+  #border(color="grey30", size=0.8, linetype=1)+
+  #font("ylab", size=12, face="plain") +
+  #font("title", size=12, face="plain")
 
-p.B=ggplot(dat.long.sub, aes(Sptype, fill=Usage)) +
+p.B=ggplot(dat.long.sub.B, aes(Sptype, fill=Usage)) +
   geom_bar(position='fill') +
   scale_fill_brewer(palette='Blues') +
   theme(axis.text.x = element_blank(),
         axis.text.y = element_blank(), plot.margin=unit(c(1,20,0,0), "pt"))+
   labs(x="", y="") +
-  ggtitle("Bycatch Other") +
-  border(color="grey30", size=0.8, linetype=1)+
-  font("title", size=12, face="plain")
+  ggtitle("Bycatch Other") #+
+  #border(color="grey30", size=0.8, linetype=1)+
+  #font("title", size=12, face="plain")
 
 p.C=ggplot(dat.long.sub, aes(Sptype, fill=Usage)) +
   geom_bar(position='fill') +
@@ -295,36 +320,36 @@ p.C=ggplot(dat.long.sub, aes(Sptype, fill=Usage)) +
   ggtitle("Habitat") +
   theme(axis.text.x = element_blank(), 
         plot.margin=unit(c(1,0,0,0.5), "pt"),
-        axis.text.y=element_text(size=10))+
-  border(color="grey30", size=0.8, linetype=1)+
-  font("ylab", size=12, face="plain") +
-  font("title", size=12, face="plain")
+        axis.text.y=element_text(size=10)) #+
+  #border(color="grey30", size=0.8, linetype=1)+
+  #font("ylab", size=12, face="plain") +
+  #font("title", size=12, face="plain")
 
-p.D=ggplot(dat.long.sub, aes(Sptype, fill=Usage)) +
+p.D=ggplot(dat.long.sub.D, aes(Sptype, fill=Usage)) +
   geom_bar(position='fill') +
   scale_fill_brewer(palette='Blues') +
   theme(axis.text.x = element_blank(),
         axis.text.y = element_blank(), plot.margin=unit(c(1,20,0,0), "pt"))+
   labs(x="", y="") +
-  ggtitle("Climate") +
-  border(color="grey30", size=0.8, linetype=1)+
-  font("title", size=12, face="plain")
+  ggtitle("Climate") #+
+  #border(color="grey30", size=0.8, linetype=1)+
+  #font("title", size=12, face="plain")
 
 
-p.E=ggplot(dat.long.sub, aes(Sptype, fill=Usage)) +
+p.E=ggplot(dat.long.sub.E, aes(Sptype, fill=Usage)) +
   geom_bar(position='fill') +
   scale_fill_brewer(palette='Blues') +
   labs(x="", y="Proportion") +
   ggtitle("Diet") +
-  border(color="grey30", size=0.8, linetype=1)+
+  #border(color="grey30", size=0.8, linetype=1)+
   theme(plot.margin=unit(c(1,0,0,0.5), "pt"),
         axis.text.x=element_text(size=10),
         axis.text.y=element_text(size=10))+
-  font("title", size=12, face="plain")+
-  font("ylab", size=12, face="plain") +
+  #font("title", size=12, face="plain")+
+  #font("ylab", size=12, face="plain") +
   scale_x_discrete(labels=x.tick.labels)
 
-p.F=ggplot(dat.long.sub, aes(Sptype, fill=Usage)) +
+p.F=ggplot(dat.long.sub.F, aes(Sptype, fill=Usage)) +
   geom_bar(position='fill') +
   scale_fill_brewer(palette='Blues') +
   labs(x="", y="") +
@@ -332,13 +357,13 @@ p.F=ggplot(dat.long.sub, aes(Sptype, fill=Usage)) +
   theme(axis.text.y = element_blank(), 
         plot.margin=unit(c(1,20,0,0), "pt"),
         axis.text.x=element_text(size=10))+
-  border(color="grey30", size=0.8, linetype=1)+
-  font("title", size=12, face="plain")+
-  font("ylab", size=12, face="plain") +
+  #border(color="grey30", size=0.8, linetype=1)+
+  #font("title", size=12, face="plain")+
+  #font("ylab", size=12, face="plain") +
   scale_x_discrete(labels=x.tick.labels)
 
 
-ggarrange(p.A, p.B, p.C, p.D, p.E, p.F, ncol=2, nrow=3, labels=c('A','B','C','D','E','F'), common.legend=TRUE,legend="right")
+#ggarrange(p.A, p.B, p.C, p.D, p.E, p.F, ncol=2, nrow=3, labels=c('A','B','C','D','E','F'), common.legend=TRUE,legend="right")
 
 
 
