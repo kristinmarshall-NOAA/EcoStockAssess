@@ -6,7 +6,7 @@ require(reshape)
 library(ggsidekick)
 library(tidyverse)
 devtools::install_github("kassambara/ggpubr")
-1library(ggpubr)
+library(ggpubr)
 library(dplyr)
 library(tidyr)
 
@@ -92,7 +92,7 @@ dat.long.sub.B=dat.long.sub[dat.long.sub$EcoInt=="Predation",]
 diet.plot.A=ggplot(dat.long.sub.A, aes(DietLab, fill=Usage)) +
   geom_bar(position='fill') +
   scale_fill_brewer(palette='Blues') +
-  guides(fill=F)+
+  guides(fill="none")+
   labs(x="", y="Proportion") +
   ggtitle("Diet")+
   theme(axis.text.x = element_text(size=10), 
@@ -426,6 +426,8 @@ kruskal.test(v1.p,sp)
 #Kruskal-Wallis chi-squared = 13.843, df = 3, p-value = 0.003127
 
 
+
+## the code below this point may not work - need to check further
 types=levels(dat.long.sub$Sptype)
 ecox=levels(dat.long.sub$EcoInt)
 stat.out=cbind(NA, NA, NA, NA, NA)
@@ -454,8 +456,12 @@ v2.p[which(v2>1)]=1
 wilcox.test(v1,v2, alternative="less")
 wilcox.test(v1.p,v2.p, alternative="less")
 
+
+
+
+
 ##################################
-##everything below this is really really old
+##everything below this is really really old and not worth looking at
 #pairwise comparisons
 v2=dat.long.sub$score[dat.long.sub$EcoInt=='Diet' & dat.long.sub$Sptype=="sm. pel."]
 v2.p=rep(0,length(v2))
